@@ -12,7 +12,32 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "expose-loader": "^0.7.4",
     "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss": "^6.0.16",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "bootstrap": "^4.0.0",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "jquery": "^3.3.1",
+    "postcss-loader": "^2.0.10",
+    "precss": "^3.1.0",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
     "webpack": "^1.15.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Month7/WakeLp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Month7/WakeLp/issues"
+  },
+  "homepage": "https://github.com/Month7/WakeLp#readme"
 }
