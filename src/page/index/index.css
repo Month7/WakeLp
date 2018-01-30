@@ -1,52 +1,54 @@
 /*
  * @Author: yin 
  * @Date: 2018-01-29 11:04:41 
- * @Last Modified by: yin
- * @Last Modified time: 2018-01-29 19:03:29
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-01-30 18:19:32
  */
  @charset "utf-8";
- 
- /*====================================公共页面 头部================================*/
- .header{
-     height: 125px;
- }
- .header-top {
-     width: 100%;
-     margin: 5px auto;
-     display: flex;
- }
- .header-top a{
-     color: black;
-     font-size: 14px;
- }
- .header-top .messager{
+a{
+    text-decoration: none;
+}
+/*====================================公共页面 头部================================*/
+.header{
+    height: 125px;
+}
+.header-top {
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+}
+.header-top a{
+    color: black;
+    font-size: 14px;
+}
+.header-top .messager{
     margin-left: 65%;
     display: flex;
- }
- .header-nav{
-     width: 100%;
-     margin: auto;
-     display: flex;
- }
- .header-search{
-     height: 40px;
-     width: 722px;
-     background-color: orange;
-     margin-top: 20px;
- }
- .header-search input{
-     height: 38px;
-     margin: 1px;
-     width: 720px;
- }
- .header-searchButton{
-     margin-top:20px;
-     margin-left: 0px;
-     background-color: orange;
-     color: #fff;
-     height: 40px;
-     width: 100px;
-     line-height: 40px;
-     border: none;
-     float: left;
- }
+}
+.header-nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.header-search{
+    height: 40px;
+    width: 722px;
+    background-color: orange;
+    margin-top: 20px;
+}
+.header-search input{
+    height: 38px;
+    margin: 1px;
+    width: 720px;
+}
+.header-searchButton{
+    margin-top:20px;
+    margin-left: 0px;
+    background-color: orange;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    border: none;
+    float: left;
+}

@@ -2,7 +2,7 @@
  * @Author: yin
  * @Date: 2018-01-28 21:18:52 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-01-29 20:49:27
+ * @Last Modified time: 2018-01-30 18:28:59
  */
 const path = require('path');
 var webpack = require('webpack');
@@ -22,7 +22,8 @@ var config = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath:'../'
   },
   //外部变量
   // externals:{
@@ -33,7 +34,8 @@ var config = {
       {
       test: /\.css$/,
       loader:  ExtractTextPlugin.extract("style-loader","css-loader")
-  }]
+  },{ 
+      test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=images/[name].[ext]' }]
   },
   //插件
   plugins:[
@@ -52,7 +54,8 @@ var config = {
     //   template: './src/view/index.html', // Load a custom 
       
     // })
-    new HtmlWebpackPlugin(getHtmlConfig('index'))
+    new HtmlWebpackPlugin(getHtmlConfig('index')),
+    new HtmlWebpackPlugin(getHtmlConfig('login'))
   ]
 };
 module.exports = config;
