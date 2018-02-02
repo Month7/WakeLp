@@ -1,0 +1,43 @@
+.header{
+    height: 125px;
+}
+.header-top {
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+}
+.header-top a{
+    color: black;
+    font-size: 14px;
+}
+.header-top .messager{
+    margin-left: 65%;
+    display: flex;
+}
+.header-nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.header-search{
+    height: 40px;
+    width: 722px;
+    background-color: orange;
+    margin-top: 20px;
+}
+.header-search input{
+    height: 38px;
+    margin: 1px;
+    width: 720px;
+}
+.header-searchButton{
+    margin-top:20px;
+    margin-left: 0px;
+    background-color: orange;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    border: none;
+    float: left;
+}

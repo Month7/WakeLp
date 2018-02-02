@@ -22,7 +22,7 @@ window.addEventListener('resize', changeRootFont, false);
             <div class="login container">
                 <div class="login-content container">
                     <div class="login-title">
-                        <h3>登录绿速康</h3>
+                        <h3>登录WakeLp</h3>
                         <div class="login-register">
                             <a href="register.html"><button>注册</button></a>
                         </div>
@@ -58,28 +58,7 @@ window.addEventListener('resize', changeRootFont, false);
         </div>
         <!---->
             <!--页脚-->
-            <div class="footer_mobie">
-                    © 2017 LVSUKANG.COM 版权所有
-            </div>
-    <div class="footer ">
-            <div class="footer_child">
-                <img src="images/footer-logo.gif"/>
-                <div class="footer_child_right">
-                        <p>
-                                <a href="购买页.html">主页</a>
-                                <span>|</span>
-                                <a href="购买页.html">关于我们</a>
-                                <span>|</span>
-                                <a href="购买页.html">服务</a>
-                                <span>|</span>
-                                <a href="购买页.html">活动专区</a>
-                                <span>|</span>
-                                <a href="购买页.html">联系我们</a>
-                        </p>
-                        <p><spe>© 2017 LVSUKANG.COM 版权所有</spe></p>
-                </div>
-            </div>
-        </div>
+            <%= require('html-loader!./footer.html')%>
         <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

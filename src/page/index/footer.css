@@ -1,0 +1,39 @@
+.footer{
+    display: none;
+}
+.footer_mobie{
+    display: block;
+    height: 5em;
+    width: 100%;
+    text-align: center;
+    line-height: 5em;
+    color: #fff;
+    background-color: rgb(47, 47, 47);
+    margin-bottom: 1rem;
+}
+.mobie-bottom{
+    display: block;
+    height: 1rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    z-index: 99;
+}
+.mobie-bottom a{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    color: black;
+}
+.mobie-bottom i{
+    margin-top:0.1rem;
+    display: block;
+    font-size: 0.45rem;
+}
+.mobie-selected{
+    background: orange;
+}

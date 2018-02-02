@@ -2,7 +2,7 @@
  * @Author: yin
  * @Date: 2018-01-28 21:18:52 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-01-30 18:28:59
+ * @Last Modified time: 2018-01-31 21:07:15
  */
 const path = require('path');
 var webpack = require('webpack');
@@ -18,7 +18,7 @@ var config = {
   entry: {    //多入口文件
     'common':['./src/page/common/index.js'],//通用模块
     'index':['./src/page/index/index.js'],
-    'login':['./src/page/login/login.js']
+    // 'login':['./src/page/login/login.js']
   },
   output: {
     filename: '[name].js',
@@ -35,7 +35,7 @@ var config = {
       test: /\.css$/,
       loader:  ExtractTextPlugin.extract("style-loader","css-loader")
   },{ 
-      test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=images/[name].[ext]' }]
+      test: /\.(jpeg|gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=10000&name=images/[name].[ext]' }]
   },
   //插件
   plugins:[

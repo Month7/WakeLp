@@ -1,0 +1,9 @@
+{
+    "carousel":{
+        "ad1":"../images/ad1.jpg",
+        "ad2":"../images/ad2.jpg",
+        "ad3":"../images/ad3.jpg"
+    },
+    "fruit":["../images/1.jpg","../images/2.jpg","../images/3.jpg","../images/4.jpg","../images/5.jpg"
+    ,"../images/6.jpg","../images/7.jpg","../images/8.jpg"]
+}
