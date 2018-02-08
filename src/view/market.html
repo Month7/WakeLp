@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>每日市场</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <!--header-->
+    <%= require('html-loader!./head.html')%>
+    <!--内容-->
+    <div class="floatled">
+            <ul>
+                <li><button class="floatled-part" style="background-color:#FF9900;">导航</button></li>
+                <li><button class="floatled-part" id="1">水果蔬菜</button></li>
+                <li><button class="floatled-part" id="2">畜牧水产</button></li>
+                <li><button class="floatled-part" id="3">米面粮油</button></li>
+                <li><button class="floatled-part" id="4">农副产品</button></li>
+                <li><button class="floatled-part" id="6" style="padding:0px;"><img src="../images/to-top.png"></button></li>
+            </ul>
+        </div>
+</div>
+<div class="market-main">
+<a href="发布.html"><button class="publish">我<br>要<br>发<br>布</button></a>
+<div class="container container-special">
+    <div class="market-menu">
+            <div class="tab-one">
+                <div class="tab-nav">
+                    <span>分类：</span>
+                </div> 
+                <div class="tab-content">
+                    <a href="market.html" class="selected">全部</a>
+                    <a href="生鲜水果.html" title="生鲜水果">生鲜水果</a>
+                    <a href="新鲜蔬菜.html">新鲜蔬菜</a>
+                    <a href="畜牧水产.html">畜牧水产</a>
+                    <a href="米面粮油.html">米面粮油</a>
+                    <a href="农副产品.html">农副产品</a>
+                    <a href="农资产品.html">农资产品</a>
+                    <a href="花卉苗木.html">花卉苗木</a>
+                    <a href="中草药材.html">中草药材</a>
+                    <a href="地方特产.html">地方特产</a>
+                   
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="tab-drop">
+                <div class="tab-content-drop">
+                </div>
+                <div class="tab-one">
+                        <div class="tab-nav">
+                            <span>地区：</span>
+                        </div> 
+                        <div class="tab-content">
+                            <a href="#" class="selected">全国</a>
+                            <a href="#" title="北京市">北京市</a>
+                            <a href="#">上海市</a>
+                            <a href="#">天津市</a>
+                            <a href="#">重庆市</a>
+                            <a href="#">河北省</a>
+                            <a href="#">山西省</a>
+                            <a href="#">内蒙古</a>
+                            <a href="#">辽宁省</a>
+                            <a href="#">吉林省</a>
+                            <a href="#">黑龙江省</a>
+                            <a href="#">河南省</a> 
+                        </div> 
+                    </div>
+                    <div class="tab-drop">
+                            <div class="tab-content-drop-special">
+                            <a href="#">湖北省</a>
+                            <a href="#">湖南省</a>
+                            <a href="#">广东省</a>
+                            <a href="#">广西</a>
+                            <a href="#">海南省</a>
+                            <a href="#">四川省</a>
+                            </div>
+                    </div>        
+            </div>               
+        </div>
+        <div style="clear:both;"></div>
+<div>
+    <img src="../images/水果蔬菜.png" id="fruit">
+</div>
+<div id="row1">
+    <div class="col-md-3 market-first">
+        <a href="购买页.html"><img src="../images/水果蔬菜-.png"></a>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/1-1.jpg"></a>
+            <div class="market-title">
+                    <p>赣南脐橙诚招代理，一件代发，保证精品赣南脐橙，保证自然成熟。</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥5.80/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/1-4.jpg"></a>
+            <div class="market-title">
+                    <p> 秭归九月红脐橙产地直销</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥2.40/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/1-3.jpg"></a>
+            <div class="market-title">
+                    <p> 新宁精品脐橙金玉果品</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥1.80/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/2-2.jpg"></a>
+            <div class="market-title">
+                    <p> 当季火龙果</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥4.00/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/2-3.jpg"></a>
+            <div class="market-title">
+                    <p> 大量出售鲜桃子</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>面议</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/2-4.jpg"></a>
+            <div class="market-title">
+                    <p> 惠州红心火龙果</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>6.80/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div>
+    <img src="../images/畜牧水产.png" id="fish">
+</div>
+<div id="row2">
+    <div class="col-md-3 market-first">
+        <a href="购买页.html"><img src="../images/水产.png"></a>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/畜牧水产1.jpeg"></a>
+            <div class="market-title">
+                    <p>七星鱼苗 鱼苗批发 星鱼</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥0.01/尾</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/畜牧水产2.jpeg"></a>
+            <div class="market-title">
+                    <p>黄骨鱼苗 黄骨水花鱼苗 黄颡鱼苗 </p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>面议</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/畜牧水产3.jpg"></a>
+            <div class="market-title">
+                    <p>海鲜大甩卖</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>面议</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/畜牧水产4.jpg"></a>
+            <div class="market-title">
+                    <p>人工生态养殖野鸡</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥45.00/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/畜牧水产5.jpg"></a>
+            <div class="market-title">
+                    <p>金鳅励志无抗鸡蛋</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥3.00/个</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/畜牧水产6.jpg"></a>
+            <div class="market-title">
+                    <p>放养湖边鹅</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>面议</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+ <div>
+    <img src="../images/米面粮油.png" id="rice">
+</div>
+<div id="row3">
+    <div class="col-md-3 market-first">
+        <a href="购买页.html"><img src="../images/米面粮油-.png"></a>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/米面粮油1.jpg"></a>
+            <div class="market-title">
+                    <p>祥宇特级初榨 精品橄榄油250ml/瓶 食用油植物油</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥79.00/瓶</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/米面粮油2.jpg"></a>
+            <div class="market-title">
+                    <p> 大豆油</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥70.00/桶</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/米面粮油3.jpg"></a>
+            <div class="market-title">
+                    <p>吴大厨山茶油2L食用山茶油植物月子油</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥188.00/件</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/米面粮油4.jpg"></a>
+            <div class="market-title">
+                    <p>桑干稻场黑豆</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>面议</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/米面粮油5.jpg"></a>
+            <div class="market-title">
+                    <p>陕北杂粮</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥4700.00/吨</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/米面粮油6.jpg"></a>
+            <div class="market-title">
+                    <p>巴基斯坦白米</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>1.00/吨</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+   <div>
+    <img src="../images/农副产品.png" id="tea">
+</div>
+<div id="row4">
+    <div class="col-md-3 market-first">
+        <a href="购买页.html"><img src="../images/茶叶.png"></a>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/茶叶1.jpg"></a>
+            <div class="market-title">
+                    <p>供应安溪乌龙茶铁观音茶叶</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>面议</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/茶叶2.jpg"></a>
+            <div class="market-title">
+                    <p> 乌龙茶</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥198.00/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/茶叶3.jpg"></a>
+            <div class="market-title">
+                    <p> 马蹄粉 糕点用淀粉 批发 厂家直销</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥50.00/kg</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/茶叶4.jpg"></a>
+            <div class="market-title">
+                    <p> 供应 山西 芮城大红袍花椒 批发</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥45.00/斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/茶叶5.jpg"></a>
+            <div class="market-title">
+                    <p>富硒黑花生</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥70.00/公斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="col-md-3 market-each">
+            <a href="购买页.html"><img src="../images/loading.gif" data-src="../market/茶叶6.jpg"></a>
+            <div class="market-title">
+                    <p>玛咖玛卡干果黑色玛咖干果</p>
+                <div class="market-text">
+                    <div class="market-price">
+                        <p>￥180.00/公斤</p>
+                    </div>
+                    <div class="market-cart">
+                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+</div>
+</div>
+<!--右侧导航-->
+<div class="right-banner container" style="padding:0">
+    <div class="right-banner-content">
+        <div class="user">
+            <span class="glyphicon glyphicon-user"></span>
+        </div>
+        <div class="rb-cart">
+            <a href="cart.html" target="_blank" style="color:white;"><span class="glyphicon glyphicon-shopping-cart">购物车</span></a>
+        </div>
+        <div class="rs-money">
+            <span class="glyphicon glyphicon-usd"></span>
+        </div>
+        <div class="rs-like">
+            <span class="glyphicon glyphicon-heart-empty"></span>
+        </div>
+        <div class="rs-er">
+            <span class="glyphicon glyphicon-qrcode"></span>
+        </div>
+    </div>
+</div>
+<div class="rbl container" style="padding:0">
+    <div class="rbl-content">
+        <div class="rbl-hurt">
+            我要充值
+        </div>
+        <div class="rbl-love">
+            我的收藏
+        </div>
+        <div class="rbl-user">
+            <img src="../images/no-img_mid_.jpg " />
+            <span>欢迎来到绿速康</span>
+            <span>请登录</span>
+            <hr>
+            <div class="OL">
+                <div class="myOrder"><a href="#">我的订单</a></div>
+                <div class="myLike"><a href="#">我的收藏</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--页脚-->
+    <%= require('html-loader!./footer.html')%>
+    <script src="../../dist/index.js"></script>
+</body>

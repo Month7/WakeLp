@@ -1,0 +1,46 @@
+@media(max-width:768px){
+     /*=======================================================全部分类============================================*/
+     .sortAll{
+        margin-top:1.3rem;
+        height: 1.2rem;
+        width: 100%;
+        background: rgb(97, 97, 97);
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 0.4rem;
+        line-height: 1.2rem;
+    }
+    .sortAll a{
+        color: #fff;
+    }
+    .sort-content{
+        display: flex;
+    }
+    .sort-nav{
+        width: 30%;
+        background: #EEEEEE;
+        border-right:  1px solid black;
+    }
+    .drop-item{
+        height: 0.6rem;
+        border: 1px solid #E7E7E7;
+        background: #fff;
+        text-align: center;
+    }
+    .sort-main{
+        width: 70%;
+    }
+    .row{
+        padding: 0;
+        margin: 0;
+    }
+    .row a{
+        display: inline;
+        font-size: 0.3rem;
+        color: black;
+    }
+    .separtor{
+        margin: 0;
+    }
+}

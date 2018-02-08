@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人中心</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/index.css" rel="stylesheet"></head>
+<body style="background-color:#F5F8FA">
+    <!--header-->
+    <div class="header container">
+    <div class="header-top">
+        <div class="messagel">
+            <a href="login.html">亲，请登录</a>
+            <a href="register.html">免费注册</a>
+        </div>
+        <div class="messager">
+                <div class="topMessage home">
+                        <div class="menu-hd"><a href="index.html" target="_top" class="h">商城首页</a></div>
+                    </div>
+                    <div class="topMessage my-shangcheng">
+                        <div class="menu-hd MyShangcheng"><a href="person.html" target="_top"><i class="glyphicon glyphicon-user"></i>个人中心</a></div>
+                    </div>
+                    <div class="topMessage mini-cart">
+                        <div class="menu-hd"><a id="mc-menu-hd" href="cart.html" target="_top"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+                    </div>
+                    <div class="topMessage favorite">
+                    <div class="menu-hd"><a href="购买页.html" target="_top"><i class="glyphicon glyphicon glyphicon-heart"></i><span>收藏夹</span></a></div>
+        </div>
+    </div>
+</div>
+<div class="header-nav">
+    <div class="header-logo">
+        <a href="index.html"><img src="../images/logobig.png"></a>
+    </div>
+    <div class="header-search">
+        <input type="text" placeholder="搜索">
+    </div>
+    <button class="header-searchButton">搜索</button>
+</div>
+</div>
+    <!--移动端-->
+    <!--移动端-->
+<div class="pWap">
+    <div id="wap-head">
+        我的绿速康
+    </div>
+    <div id="mobieH">
+        <img src="../images/fuck.jpg">
+        <p>用户名:lazy</p>
+        <p>V7会员</p>
+    </div>
+    <!---->
+    <div class="wap-money container">
+        <div class="col-xs-4">
+            <span class="m-title">优惠券</span>
+            <span class="m-num">21</span>
+        </div>
+        <div class="col-xs-4">
+            <span class="m-title">账户余额</span>
+            <span class="m-num">183,999,234</span>
+        </div>
+        <div class="col-xs-4">
+            <span class="m-title">总积分</span>
+            <span class="m-num">213700</span>
+        </div>
+    </div>
+    <!--订单-->
+    <div class="wap-order">
+        <div class="person-data-head">
+                我的订单
+                <a href="#"  class="pull-right">全部订单</a>
+        </div>
+        <ul>
+            <li><a href="order.html"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAQ9SURBVHic7ZpfaBxFHMe/v8nW68VSaCEEFR9STIg3uynVIHiiJakoiC++rFUQpaIvgkIrCP57qPgHC1alPvj/QSg1+lTBp5IghYhoNO7tZoNB4p8WkTRWg3+uNjs/H5LI3HF77OUuO83dfp5mZuc7+5svN7O/2x1iZnQywnQApskMMB2AaTIDTAdgmswA0wGYpuMNsOpdJCKSUt7PzPuIaA+AbSnF1Qi/AZgCcNL3/U8aFVNcJjg4OHilZVnHAextLr5UOQHgId/3/0wqqLkEiIgsy/oAm2vyALAfwCuNCGr+AmzbvgfA8armMwCCdYe2cdwAYIfeIIQoep73eRJx3B6wr6p+qFAovDY2NhatI8ANpVgs5peWlo4AeGStTSm1F0AiA+KWwB6t+ktPT8/rl+LkAWBycvIfInoOwEWteSipvqYBzHy5Vv1uYmJieZ3xpUKpVPoVK0+DNbqTajs+D8gMMB2AaTIDTAdgmswA0wG0kK/WCsz8TVJR3X+Dm4koig4KIc4T0aJS6lhSnXED+vv7t+fzecnMuWbGsSwLAN4lIlZKbQOwmEjXzE2bwbbtmwC8msvlrldKUavGZWYIIWDb9gIzH5VSvlwvjTeyBziOcwDAaQDDAFo2+Sp6iOiFMAzHh4eHt8R1St2AQqFgM/Mb2LiJV8DMt5TL5Wfjrqe+BIQQDwLYqjX9RERvMfP3rRifmfNCiHuZ+Vat+Ym+vr7n5+fny9X9TewBd2rlC1EUXReGYaINqwHel1J+SETuan1Ld3f3bgBfVHc0YcDVWvnTVkzecZxrlVJPCiF2KqVeCoLgNBG9B2DNAAghBnCJGKCz1IpBmPkoEd3OzCAi23XdXUqpP4QQep+uWtp2yQSv0cq9s7Oz25MK28IAZj4C4AIARUTHPM87n1RrwgD91dWNRNT04zAIgjejKLpKKbWrVCo9DgBdXV0317nv/5gwYEorD0gpnx4aGtoR2zshYRguzszM/EhE5DjObcz8mH7dsqypWjoTm+BJVD4KDyulnrJt+/dWDC6lvIyZKwwloq+np6fP1uqfugFBELwjpdwPYFRrzgHo3aBb/ktED8RdTH0JMDNHUeQS0Ucp3O5nZr7D87xSXAcjecBq8uPatj2Kle+Pu1GZHjcDM/MPQogvy+Xyx3Nzc3VzDaOJkO/74wDGWzEWEVGhUBglonNBEHybVNcWeQAASClfJKJTAKYdx7krqa5tDMDKp3EAADPfnVTUTgZsjSnXpZ0MWBeZAaYDME1mgOkATBN3ROYvrTowMjJi+s1RXRzH6QWwU2v6O6k27oiM/m3tioWFhUdd1635Ssk0xWIxz8zPANDf/XtJ9R1/TK6mAatHZE+h8i/rZuFt3/cfTto5bgnw8vLyfQA+a1lY6XACwMFGBLFnhYEOPyzdKWR5gOkATJMZYDoA02QGmA7ANJkBpgMwzX88yGW+T4bloAAAAABJRU5ErkJggg=="/></i><span>待付款</span></a></li>
+            <li><a href="order.html"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPySURBVHic7ZpBaBxVGMf/39tNZmQJKpgUeilBg2XnTUwkqBerQUQ8iEXBi6goCqJglVIoejJIe2jFlrY3eykKQkHBgwpFcvGguCYx8yYR0ovaKqWxSJB1223f52VjpuHNZLbdeU/c+UFY3rff7vvNP+zbtzNDzIx+RrgWcE0ZgGsB15QBuBZwTRmAawHXVPM2Tk5O3tZut8e01pUihW6WSqXS9DxvudFotPP001YboSAIXiSitwHcCYB64GiDKwC+Y+Y9cRzPZzWmBkBEFATBaQBPFyBoizaA15RSH6Y1pAYgpXwdwPGCxGzSEkJMLi4u/mR60rgGTE1NDQA4mKwR0RwznwRwqUuB5wE8nhjvBfBbWjMRDTDzqUSpAeD9LuYLALwCYFtn7GutDwB4ytRsDKDZbIZCiKFE6fMoip7sQuJfpJQPIBGAEOKLtP8GAIyOjvq1Wi0ZwHml1CfdzDk2NnbI87xzANaP4f60XuPXIBHds2l8ohsB16ysrKwB+ChR2j4+Pn67qdcYgBDCS46J6Jfe6VnjOmettWdq6vuNUBmAawHXlAG4FnBNGYBrAdf0fQC5zgdorT+TUrYAMAAQEQMAb/ySynrccZOOD0sp57eY2zTv9jxvnveEyM7kwPLFlFsBTBQ1d/kRyNm3CuAaNs4IdfN4CwDjPjwnlwH8ucUcpprf+cskVwBCiAezfsJmIaU8AmDPjby2w1dKqd03MO9+bDqnYaLvPwJlAK4FXFMG4FrANbmvDPUaIhL1ev0FAPcR0e++7x9uNBpN2x5OApBSPhYEwSEA4Xqt1Wq9FIbhWwC+tOliPQBm/hjAvYandjDzp7Va7WubPtbXAGY2HXySR6yIdHC9CK4w8xsAYlcCNgL421C7RERv+r4fxHF8bHh4eIKI9gH4y9B7rUg5GwGcxMZBtAF8IIS4K4qio+vX8GdnZ69GUXS4Wq3uJKLTyRcz82KRcoUvgkqps2EYhsw8AeB7pdTZtN6FhYXzAJ4Jw/BRZt4N4MLIyMiBIv2sfAtEUbQMYLmL/jMAzhRntIHrRdA5ZQCuBVxTBuBawDVlAKYiM19NjrXWd9jR6R1EdJ3z4OCgcUeZdo/Q0qbSyz3ysoKUcpCZn0uU/pibm7to6jVuhIaGhubX1tbaAAY6pWellL7W+hS6v03OKpVKpQ7gVQAjifIPaf1ZN0q+B+Cdntq5QQN4SCn1jenJrEVwhoi+LcbJHsw8k3bwQEYASqkrnuftAjADoFWEXMH8SkRPxHH8blbTlneLA8D09HR1dXW1rrW+m4j+07fLA2hqrX9cWlr6OU9zrgD+z5QbIdcCrikDcC3gmjIA1wKu6fsA/gFU3zJo+lzw/AAAAABJRU5ErkJggg=="/></i><span>待发货</span></a></li>
+            <li><a href="order.html"><i><img src="data:image/png;base64,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"/></i><span>待收货</span></a></li>
+            <li><a href="order.html"><i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPVSURBVHic7ZpPaBRXHMe/v192XWKpHjwI0oAeUtiZN3owEImF0h5sKJWWHmw91EMRJDcP4s2bp3qQUk9SCk1pQxPoRQu2hRZKLRZySd6bDbQH6UEkh1ZMxGCzvl8P2dV1nTFj5828hp3Pad8ffvP9fefNe29mH4kIBhn2LcA3lQG+BfimMsC3AN9UBvgW4JvaZh2CIHiTmV8FMIqtY5gF8AcR/ay1/vZZHSltIzQ6Orqj0WhMA3i7AIFlcpWZTywuLt5Jaky9o41G4xNs/eQB4C1r7aW0xsQREIZhSEQmob8FsO5QXBHUkXBjRUTFcRz31yfOAcw83mfMChGdb7fbny0tLf3lTGoBNJvNXbVa7UMROQfgxW49M48DyGaAtXaEiB6VReSyMeZCAXqd07lBF5RSewCc7tZba0eS+ifOAcxMveWhoaFplyLLgIi+7C335/SoPkuw9fX1VReiyoSI7mXpt1XW9cKoDPAtwDeVAb4F+GbTl6GsRFG0G0DTVbwMLGutl/IGcWJAEATvMPPXALa5iJcVpdTHxpjTm/dMx8kjwMzHUHLyHd7LG8CJAUT0FYA1F7GeAwHwRd4gTh4BrfVVpdRL1tqXXcTLQr1eX15YWLiZN46zSdAY8zeAG67ilcXAL4OVAb4F+GbgDXAyCUZR1BSRTwEcdBEvI7dF5Gwcx3N5gjgxwFp7hogmXMR6DvYS0UcAchngaieYe0/+H/k9bwAnI6DZbF6M4/hPIirtESCi27Va7fO8cZwYMDs7+xAbQzHXcPTBwK8ClQG+BfimMsC3AN9UBvgW4JtMBjDzC0ULKYBMmhMNsNY+cTiAiD5woahMROR4b7k/py6JO0EiutVXdSoMw1vDw8PT8/Pzdx1pLISxsbGda2trJ4joZG99Qk4b9UlHZKIo2i8iCwn9/0G+r78PABw3xvyY1KiUeh3ADIBGjmsMI+ETPREd0FovPlWfdkpMKTUD4P0cQtK4D+Bovwmd5K8A2O76gkQ0p7U+ltSWOgnW6/UpANdci8FGglc6CQMoNnkAP7Tb7am0xtQR0CWKondF5DCAfci3bL4GYEdP+T6Ao53f/cmvAPgpx7UsgJtEdF1r/c2zOm5qgCvCMBwnou/xtAlAX/IiciSO49/K0FWaAQAQBMEhZv4OT5rQy4q19o1Wq1XaHyyl7gRbrdYNZp4EkHToapWZJ8tMHih5BHSJomhCRK7h8UHGVSKa1Fr/WrYWLwYAgFLqMB6vMpPGmOs+dHgzAACUUq8AgDHmF18avBrwf6B6HfYtwDeVAb4F+KYywLcA3wy8Af8CGt8cAZK0J3IAAAAASUVORK5CYII="/></i><span>待评价</span></a></li>
+            <li><a href="change.html"><i><img src="data:image/png;base64,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"/></i><span>退换货</span></a></li>
+        </ul>
+    </div>
+    
+    <!--九宫格-->
+    <div class="user-squaredIcon">
+            <div class="person-data-head">
+                    我的常用
+            </div>
+            <ul>
+                <a href="#">
+                    <li class="am-u-sm-4"><i class="am-icon-truck am-icon-md"></i>
+                        <p>物流查询</p>
+                    </li>
+                </a>
+                <a href="collection.html">
+                    <li class="am-u-sm-4"><i class="am-icon-heart am-icon-md"></i>
+                        <p>我的收藏</p>
+                    </li>
+                </a>
+                <a href="foot.html">
+                    <li class="am-u-sm-4"><i class="am-icon-paw am-icon-md"></i>
+                        <p>我的足迹</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li class="am-u-sm-4"><i class="am-icon-gift am-icon-md"></i>
+                        <p>为你推荐</p>
+                    </li>
+                </a>
+                <a href="blog.html">
+                    <li class="am-u-sm-4"><i class="am-icon-share-alt am-icon-md"></i>
+                        <p>我的分享</p>
+                    </li>
+                </a>
+                <a href="促销.html">
+                    <li class="am-u-sm-4"><i class="am-icon-clock-o am-icon-md"></i>
+                        <p>限时活动</p>
+                    </li>
+                </a>
+            </ul>
+    </div>
+</div>
+    <!--内容-->
+     <!--全部分类-->
+     <div class="navCarousel  container">
+            <div class="nC-head">
+                <div class="all-sort">全部分类
+                </div>
+                <a href="index.html">首页</a>
+                <a href="促销.html">活动专区</a>
+                <a href="market.html">每日市场</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html">服务</a>
+            </div>
+    </div>
+    <div class="person-main container">
+        <div class="person-menu">
+            <ul>
+                    <li class="person active">
+                            <a href="#"><i class="am-icon-user"></i>个人中心</a>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-newspaper-o"></i>个人资料</p>
+                            <ul>
+                                <li> <a href="information.html">个人信息</a></li>
+                                <li> <a href="safety.html">安全设置</a></li>
+                                <li> <a href="address.html">地址管理</a></li>
+                                <li> <a href="cardlist.html">快捷支付</a></li>
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-balance-scale"></i>我的交易</p>
+                            <ul>
+                                <li><a href="order.html">订单管理</a></li>
+                                <li><a href="change.html">退款售后</a></li>
+                                <li><a href="comment.html">评价商品</a></li>
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-dollar"></i>我的资产</p>
+                            <ul>
+                                <li> <a href="points.html">我的积分</a></li>
+                                <li> <a href="coupon.html">优惠券 </a></li>
+                                <li> <a href="bonus.html">红包</a></li>
+                                <li> <a href="walletlist.html">账户余额</a></li>
+                                <li> <a href="bill.html">账单明细</a></li>
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-tags"></i>我的收藏</p>
+                            <ul>
+                                <li> <a href="collection.html">收藏</a></li>
+                                <li> <a href="foot.html">足迹</a></li>														
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-qq"></i>在线客服</p>
+                            <ul>
+                                <li> <a href="consultation.html">商品咨询</a></li>
+                                <li> <a href="suggest.html">意见反馈</a></li>							
+                                
+                                <li> <a href="news.html">我的消息</a></li>
+                            </ul>
+                        </li>
+            </ul>
+        </div>
+        <div class="person-content">
+            <div class="person-data-head">
+                <span>个人资料</span>
+            </div>
+            <div class="person-data">
+                <div style="display:flex">
+                    <div class="person-data-left col-md-2.4">
+                        <img src="../images/fuck.jpg">
+                    </div>
+                    <div class="col-md-4.8 person-data-text">
+                        <p><strong>欢迎 Lazy</strong>（11111111111）</p>
+                        <p>Lazy (V7会员)</p>
+                    </div>
+                </div>
+                <div style="display:flex" class="container"> 
+                    <div class="col-md-6">
+                        <div class="s-bar">个人资产</div>
+                        <p class="m-item">
+                                <a href="#">
+                                    <span class="m-title">优惠券</span>
+                                    <span class="m-num">21</span>
+                                </a>
+                            </p>
+                            <p class="m-item">
+                                <a href="#">
+                                    <span class="m-title">账户余额</span>
+                                    <span class="m-num">183,999,234</span>
+                                </a>
+                            </p>
+                            <p class="m-item">
+                                <a href="#">
+                                    <span class="m-title">总积分</span>
+                                    <span class="m-num">213700</span>
+                                </a>
+                            </p>
+                    </div>
+                    <div class="person-wallet">
+                            <div class="s-bar">商城钱包</div>
+                            <div style="display:flex">
+                                <div class="m-img m-shop">
+                                    <img src="../images/shopping.png">
+                                    <p>能购物</p>
+                                </div>
+                                <div class="m-img m-safe">
+                                    <img src="../images/safe.png">
+                                    <p>很安全</p>
+                                </div>
+                                <div class="m-img m-profit">
+                                    <img src="../images/profit.png">
+                                    <p>很灵活</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+               
+            </div>
+            <div class="">
+                <div class="person-data-head">
+                    <span>我的订单</span>
+                    <span class="pull-right" style="border:none;"><a href="#">全部订单</a></span>
+                </div>
+                <table class="person-order">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td>
+                               <a href="购买页.html"><img src="../畜牧水产/2-4.jpg"></a>
+                           </td>
+                           <td colspan="3">
+                                <div class="o-bar">已签收</div>
+                                <div class="o-time">2017-11-20|19:17:53</div>
+                                <div>共1件商品</div>
+                           </td>
+                           <td colspan="2" class="o-site">
+                               待评价
+                           </td>
+                           <td colspan="2" class="o-price">
+                               ￥21.30
+                           </td>
+                           <td colspan="3">
+                               <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                           </td>
+                       </tr>
+                       <tr>
+                            <td>
+                                <a href="购买页.html"><img src="../生鲜水果/2-4.jpg"></a>
+                            </td>
+                            <td colspan="3">
+                                 <div class="o-bar">待收货</div>
+                                 <div class="o-time">2017-11-20|19:17:53</div>
+                                 <div>共1件商品</div>
+                            </td>
+                            <td colspan="2" class="o-site">
+                                待收货
+                            </td>
+                            <td colspan="2" class="o-price">
+                                ￥70.00
+                            </td>
+                            <td colspan="3">
+                                <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <a href="购买页.html"><img src="../农副产品/2-4.jpg"></a>
+                                </td>
+                                <td colspan="3">
+                                     <div class="o-bar">待发货</div>
+                                     <div class="o-time">2017-11-20|19:17:53</div>
+                                     <div>共1件商品</div>
+                                </td>
+                                <td colspan="2" class="o-site">
+                                    待发货
+                                </td>
+                                <td colspan="2" class="o-price">
+                                    ￥121.50
+                                </td>
+                                <td colspan="3">
+                                    <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                                </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class="person-history">
+                
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer_mobie">
+    © 2018 WakeLp.COM 版权所有
+</div>
+<div class="footer">
+<div class="footer_child">
+<img src="data:image/gif;base64,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"/>
+<div class="footer_child_right">
+        <p>
+                <a href="购买页.html">主页</a>
+                <span>|</span>
+                <a href="购买页.html">关于我们</a>
+                <span>|</span>
+                <a href="购买页.html">服务</a>
+                <span>|</span>
+                <a href="购买页.html">活动专区</a>
+                <span>|</span>
+                <a href="购买页.html">联系我们</a>
+        </p>
+        <p><spe>© 2018 WakeLp.COM 版权所有</spe></p>
+</div>
+</div>
+</div>
+<div class="mobie-bottom">
+        <a href="index.html" class="mobie-selected"><i class="glyphicon glyphicon-home"></i>首页</a>
+        <a href="sort.html"><i class="glyphicon glyphicon-th-list"></i>分类</a>
+        <a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>购物车</a>
+        <a href="person.html"><i class="glyphicon glyphicon-user"></i>我的</a>
+</div>
+    <!-- <script src="../../dist/index.js"></script> -->
+<script type="text/javascript" src="../js/base.js"></script><script type="text/javascript" src="../index.js"></script></body>

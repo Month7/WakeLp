@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人中心</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body style="background-color:#F5F8FA">
+    <!--header-->
+    <%= require('html-loader!./head.html')%>
+    <!--移动端-->
+    <%= require('html-loader!./mobieHead.html')%>
+    <!--内容-->
+     <!--全部分类-->
+     <div class="navCarousel  container">
+            <div class="nC-head">
+                <div class="all-sort">全部分类
+                </div>
+                <a href="index.html">首页</a>
+                <a href="促销.html">活动专区</a>
+                <a href="market.html">每日市场</a>
+                <a href="about.html">关于我们</a>
+                <a href="services.html">服务</a>
+            </div>
+    </div>
+    <div class="person-main container">
+        <div class="person-menu">
+            <ul>
+                    <li class="person active">
+                            <a href="#"><i class="am-icon-user"></i>个人中心</a>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-newspaper-o"></i>个人资料</p>
+                            <ul>
+                                <li> <a href="information.html">个人信息</a></li>
+                                <li> <a href="safety.html">安全设置</a></li>
+                                <li> <a href="address.html">地址管理</a></li>
+                                <li> <a href="cardlist.html">快捷支付</a></li>
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-balance-scale"></i>我的交易</p>
+                            <ul>
+                                <li><a href="order.html">订单管理</a></li>
+                                <li><a href="change.html">退款售后</a></li>
+                                <li><a href="comment.html">评价商品</a></li>
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-dollar"></i>我的资产</p>
+                            <ul>
+                                <li> <a href="points.html">我的积分</a></li>
+                                <li> <a href="coupon.html">优惠券 </a></li>
+                                <li> <a href="bonus.html">红包</a></li>
+                                <li> <a href="walletlist.html">账户余额</a></li>
+                                <li> <a href="bill.html">账单明细</a></li>
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-tags"></i>我的收藏</p>
+                            <ul>
+                                <li> <a href="collection.html">收藏</a></li>
+                                <li> <a href="foot.html">足迹</a></li>														
+                            </ul>
+                        </li>
+                        <li class="person">
+                            <p><i class="am-icon-qq"></i>在线客服</p>
+                            <ul>
+                                <li> <a href="consultation.html">商品咨询</a></li>
+                                <li> <a href="suggest.html">意见反馈</a></li>							
+                                
+                                <li> <a href="news.html">我的消息</a></li>
+                            </ul>
+                        </li>
+            </ul>
+        </div>
+        <div class="person-content">
+            <div class="person-data-head">
+                <span>个人资料</span>
+            </div>
+            <div class="person-data">
+                <div style="display:flex">
+                    <div class="person-data-left col-md-2.4">
+                        <img src="../images/fuck.jpg">
+                    </div>
+                    <div class="col-md-4.8 person-data-text">
+                        <p><strong>欢迎 Lazy</strong>（11111111111）</p>
+                        <p>Lazy (V7会员)</p>
+                    </div>
+                </div>
+                <div style="display:flex" class="container"> 
+                    <div class="col-md-6">
+                        <div class="s-bar">个人资产</div>
+                        <p class="m-item">
+                                <a href="#">
+                                    <span class="m-title">优惠券</span>
+                                    <span class="m-num">21</span>
+                                </a>
+                            </p>
+                            <p class="m-item">
+                                <a href="#">
+                                    <span class="m-title">账户余额</span>
+                                    <span class="m-num">183,999,234</span>
+                                </a>
+                            </p>
+                            <p class="m-item">
+                                <a href="#">
+                                    <span class="m-title">总积分</span>
+                                    <span class="m-num">213700</span>
+                                </a>
+                            </p>
+                    </div>
+                    <div class="person-wallet">
+                            <div class="s-bar">商城钱包</div>
+                            <div style="display:flex">
+                                <div class="m-img m-shop">
+                                    <img src="../images/shopping.png">
+                                    <p>能购物</p>
+                                </div>
+                                <div class="m-img m-safe">
+                                    <img src="../images/safe.png">
+                                    <p>很安全</p>
+                                </div>
+                                <div class="m-img m-profit">
+                                    <img src="../images/profit.png">
+                                    <p>很灵活</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+               
+            </div>
+            <div class="">
+                <div class="person-data-head">
+                    <span>我的订单</span>
+                    <span class="pull-right" style="border:none;"><a href="#">全部订单</a></span>
+                </div>
+                <table class="person-order">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                           <td>
+                               <a href="购买页.html"><img src="../畜牧水产/2-4.jpg"></a>
+                           </td>
+                           <td colspan="3">
+                                <div class="o-bar">已签收</div>
+                                <div class="o-time">2017-11-20|19:17:53</div>
+                                <div>共1件商品</div>
+                           </td>
+                           <td colspan="2" class="o-site">
+                               待评价
+                           </td>
+                           <td colspan="2" class="o-price">
+                               ￥21.30
+                           </td>
+                           <td colspan="3">
+                               <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                           </td>
+                       </tr>
+                       <tr>
+                            <td>
+                                <a href="购买页.html"><img src="../生鲜水果/2-4.jpg"></a>
+                            </td>
+                            <td colspan="3">
+                                 <div class="o-bar">待收货</div>
+                                 <div class="o-time">2017-11-20|19:17:53</div>
+                                 <div>共1件商品</div>
+                            </td>
+                            <td colspan="2" class="o-site">
+                                待收货
+                            </td>
+                            <td colspan="2" class="o-price">
+                                ￥70.00
+                            </td>
+                            <td colspan="3">
+                                <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <a href="购买页.html"><img src="../农副产品/2-4.jpg"></a>
+                                </td>
+                                <td colspan="3">
+                                     <div class="o-bar">待发货</div>
+                                     <div class="o-time">2017-11-20|19:17:53</div>
+                                     <div>共1件商品</div>
+                                </td>
+                                <td colspan="2" class="o-site">
+                                    待发货
+                                </td>
+                                <td colspan="2" class="o-price">
+                                    ￥121.50
+                                </td>
+                                <td colspan="3">
+                                    <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                                </td>
+                        </tr>
+                   </tbody>
+                </table>
+            </div>
+            <div class="person-history">
+                
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <%= require('html-loader!./footer.html')%>
+    <!-- <script src="../../dist/index.js"></script> -->
+</body>

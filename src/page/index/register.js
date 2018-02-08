@@ -1,0 +1,11 @@
+$(function(){
+    /*======================================登陆注册=============================================*/
+    $("#toEmail").click(function(){
+        $(".register-email").animate({left:"0"},200);
+        $(".register-phone").animate({left:"400px"},10);
+    });
+    $("#toPhone").click(function(){
+        $(".register-phone").animate({left:"0"},200);
+        $(".register-email").animate({left:"-400px"},10);
+    })
+})

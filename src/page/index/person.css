@@ -1,0 +1,296 @@
+/*================================================个人主页=========================================================*/
+.pWap{
+    display: none;
+}
+.person-main{
+    padding: 0;
+    margin-top:20px;
+    display: flex;
+    background: #fff;
+}
+.person-menu li{
+    list-style-type: none;
+}
+.person-menu{
+    background: #fff;
+    width: 15%;
+    padding: 0;
+}
+.person-menu i{
+    color: orange;
+}
+.person-menu ul{
+    padding: 0;
+    text-align: center;
+}
+.person ul{
+    border-bottom:  1px solid #F5F8FA;
+}
+.person-menu li{
+    margin: auto;
+}
+.active{
+    border-bottom: 3px solid orange;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+}
+.active a{
+    color: orange;
+    font-size: 18px;
+}
+.person p{
+    font-size: 16px;
+}
+.person a{
+    color: #9999A5;
+    font-size: 14px;
+}
+.person-content{
+    width: 85%; 
+    margin-left: 0;
+}
+.person-data-head{
+    border-bottom: 1px solid #9999A5;
+    padding: 0px;
+}
+.person-data-head span{
+    padding: 10px;
+    border-bottom: 3px solid orange;
+    display: inline-block;
+}
+.person-data{
+    display: flex;
+    padding: 20px;
+   
+}
+.person-data-left img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.person-data-left img:hover{
+    -webkit-filter: blur(3px); 
+    -moz-filter: blur(3px);
+     -ms-filter: blur(3px);    
+         filter: blur(3px);
+    
+}
+.person-data-text{
+    padding: 30px;
+}
+.s-bar{
+    border-left: 2px solid orange;
+    height: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+.m-num{
+    color: orange;
+}
+.person-wallet{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.m-img{
+    margin:20px;
+}
+.m-img p{
+    text-align: center;
+   
+}
+.m-shop img:hover{
+    transform: translateX(10px);
+}
+.m-img img{ 
+    height: 50px;
+    transition:all 0.3s;
+    cursor: pointer;
+}
+@keyframes mSafe{
+    0%{transform: rotateZ(0deg)}
+    20%{ transform: rotateZ(20deg)}
+    40%{transform: rotateZ(-20deg)}
+    60%{ transform: rotateZ(0deg)}
+    80%{transform: rotateZ(20deg)}
+    100%{transform: rotateZ(0deg)}
+}
+.m-safe img:hover{
+    animation: mSafe 0.1s;
+}
+.m-profit img:hover{
+    transform: rotateZ(360deg);
+}
+.m-item{
+    transition: all 0.2s;
+    position: relative;
+    font-size: 16px;
+    padding: 10px 0; 
+    margin: 0;
+}
+.m-item:hover{
+    transform: translateX(-10px);
+}
+.m-item::before{
+    content: "|";
+    position: absolute;
+    top:-10px;
+    left: 20px;
+    color: orange;
+    opacity: 0;
+    font-size: 40px;
+    transition: translateX 0.2s;
+    transition: opacity 0.4s;
+}
+.m-item:hover::before{
+    opacity: 1;
+    transform: translateX(-30px);
+}
+.person-order td{
+    padding: 20px; 
+}
+.person-order th{
+    width: 100px;
+    height: 1px;
+}
+.person-order img{
+    width: 80px;
+    height: 80px;
+}
+.person-order tbody tr{
+    border-bottom: 1px solid #9999A5;
+}
+.o-bar{
+    border-left: 2px solid orange;
+    height: 20px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+.o-btn {
+	background: none;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	border-radius:0px !important;
+	text-decoration:none;
+	color:#000;
+	font-size: 1em;
+	border: 2px solid #ff9900;
+	padding: 0.4em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+.o-btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.person-main a:hover{
+    color: black!important;
+}
+.person-history{
+    display: block;
+}
+@media (max-width:768px){
+    .pWap{
+        display: block;
+        margin-bottom: 5rem;
+    }
+    .pWap a{
+        color: black;
+    }
+    #perH{
+        display: none;
+    }
+    .person-menu{
+        display: none;
+    }
+    .person-main{
+        display: none;
+    }
+    .person-menu li{
+        list-style-type: none;
+    }
+    #mobieH{
+        height: 2.3rem;
+        width: 100%;
+        display: flex;
+        background: orange;
+        padding: 0.5rem;
+    }
+    #mobieH img{
+        border-radius: 50%;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    #mobieH p{
+        margin-top:0.5rem;
+        margin-left: 0.3rem;
+    }
+    .wap-money{
+       display: flex;
+       border-bottom: 1px solid black;
+    }
+    .wap-money>div{
+        padding: 0.5rem;
+        text-align: center;
+        padding-bottom: 0.2rem;
+    }
+    .user-squaredIcon ul{
+        padding: 0;
+        margin: 0;
+        margin-top:0.7rem;
+    }
+    .user-squaredIcon ul li{
+        list-style-type: none;
+        font-size:0.25rem;
+        padding: 0; 
+        width: 33%;
+        margin: auto;
+    }
+    .user-squaredIcon a{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .user-squaredIcon ul li i{
+        color: orange;
+        font-size:0.4rem;
+    }
+    .wap-order ul{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top:0.3rem;
+    }
+    .wap-order ul li{
+        list-style-type: none;
+        font-size: 0.3rem;
+        width: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+    .wap-order ul li img{
+        width: 0.8rem;
+        height: 0.8rem;
+        margin: auto;
+    }
+    #wap-head{
+        height: 1rem;
+        width: 100%;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .person-history{
+        display: none;
+    }
+}

@@ -2,7 +2,7 @@
  * @Author: yin 
  * @Date: 2018-01-29 11:04:41 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-02-01 19:18:01
+ * @Last Modified time: 2018-02-08 00:12:21
  */
  @charset "utf-8";
 a{
@@ -517,4 +517,89 @@ a:visited,a:active{
 }
 .active-orange{
     background-color: orange;
+}
+/*移动端*/
+@media(max-width:768px){
+    hr{
+        display: none;
+    }
+    .right-banner{
+        display: none;
+    }
+    .rbl{
+        display: none;
+    }
+    /*========================================轮播图========================================*/
+    .navCarousel{
+        display: none;
+    }
+    .carouselBg{
+        margin-top:1.3rem;
+        height: 3rem;
+        width: 100%;
+        padding: 0;
+    }
+    .data-carousel{
+        
+        height: 3rem;
+        width: 100%;
+    }
+    .data-carousel img{
+        height: 3rem;
+        width: 100%;
+        left:0;
+        border: none;
+        z-index: 1;
+    }
+    .carousel-li{
+        left: 30%;
+        bottom: 0;
+    }
+    .carousel-li ul li{
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        border: 1px solid black;
+        float: left;
+        margin-left: 0;
+        cursor: pointer;
+    }
+    /*=========================================内容============================================*/
+    .today{
+        display: none;
+    }
+    .cuxiao{
+        display: none;
+    }
+    .show-item{
+        display: none;
+    }
+    .icon{
+        width: 100%;
+        background: #EEEEEE;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+        font-weight: normal!important;
+    }
+    .icon span a{
+        font-size:0.3rem!important;
+        font-weight: normal!important;
+    }
+    .icon img{
+        display: none;
+    }
+    .show-content{
+        padding: 0;
+        border-bottom: none;
+    }
+    
+    .show-content span{
+        display: none;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    }
 }

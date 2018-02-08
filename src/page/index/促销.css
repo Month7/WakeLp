@@ -1,0 +1,660 @@
+/*========================================活动专区=================================*/
+@media (min-width: 1920px){ 
+    a{
+        color: black;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .miaosha{
+        background-image: url(../../images/秒杀背景.png);
+        padding-bottom: 80px;
+        background-position: -400px 0px;
+        background-repeat: repeat-y;
+        position: relative;
+    }
+    .time-container{
+        position: absolute;
+        height:450px;
+        width: 200px;
+        top:60px;
+        left: 370px;
+    }
+    .time-container li{
+        list-style-type: none;
+    }
+    .line{
+        font-weight: 400;
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 16px;
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        overflow:hidden;
+    }
+    .line:hover{
+        color:#fed719;
+        text-decoration:none;
+        width:auto;
+        border-color:#fed719;
+    }
+    .focus{
+        width: 200px;
+    }
+    .focus .time1{
+        font-size:32px;
+        padding-right:10px;
+    }
+    .flex{
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:1px;
+        line-height:0;
+        font-size:0;
+        background:#fff;
+        width:100px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .focus .flex{
+        width: 200px;    
+    }
+    .list{
+        position: relative;
+        top:60px;
+        width: 660px;
+        margin: auto;
+        background-color: #fff;
+    }
+    .goods{
+        /* margin-top:40px; */
+        position: relative;
+        margin-top:20px;
+    }
+    .goods-first{
+        position: relative;
+        margin-top:0px!important;   
+    }
+    .goods-img{
+        width: 270px;
+        height: 270px;
+        border: 1px solid #fff;
+    }
+    .goods-img:hover{
+        opacity: 0.8;
+    }
+    .list-title{
+        font-family:'\5FAE\8F6F\96C5\9ED1';
+        position: absolute;
+        top:0px;
+        left: 0px;
+        padding-left: 300px;
+        padding-top:20px;
+    }
+    .goods-price{
+        position: absolute;
+        top:60px;
+        margin-top:10px;
+        height: 70px;
+        width: 100%;
+        padding-left: 300px;
+        padding-top:20px;
+    }
+    .title-link{
+        display: block;
+        width: 350px;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .nowPrice{
+        width: 180px;
+        color: red;
+        height: 21px;
+    }
+    .sec-price{
+        font-size:28px;
+        font-family:Tahoma;
+        font-weight:700;
+        color: red;
+    }
+    .money{
+        font-style:normal;
+        font-family:Tahoma;
+        color: red;
+    }
+    .original{
+        width:30%;
+        text-decoration:line-through;
+    }
+    .original .money{
+        font-style:normal;
+        font-family:Tahoma;
+        color: black;
+    }
+    .ratio{
+        width:20%;
+    }
+    .price-button{
+        position: absolute;
+        top:180px;
+        left: 300px;
+    }
+    .buy{
+        display: block;
+        width:160px;
+        height: 60px;
+        background-color: #fed623;
+        border-radius:2px 0 0 2px;
+        color:#784d0f;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        font-size:18px;
+        float: left;
+    }
+    .buy:hover{
+        text-decoration:none;
+        color:#784d0f;
+        background-color:#ffdf45;
+    }
+    .hd{
+        position: relative;
+        float: left;
+        display: block;
+        width:140px;
+        height: 60px;
+        background-color: #b92a2f;
+        border-radius:2px 0 0 2px;
+        color:#784d0f;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        font-size:18px;
+       
+    }
+    .hd-arrow{
+        position: absolute;
+        left: 123px;
+        border: 30px solid #b92a2f;
+        border-right:30px solid #fff;
+    }
+    .name{
+        left: 20px;
+        position: absolute;
+        display:block;
+        top:-10px;
+        font-size:14px;
+        color: #fff;
+    }
+    .look{
+        left: 20px;
+        position: absolute;
+        display:block;
+        color:#fed623;
+        font-size:14px;
+        font-family:'\5FAE\8F6F\96C5\9ED1';
+        top:5px;
+    }
+    .all{
+        margin-left: 620px;
+        margin-top:90px;
+        background: #FFD716;
+        width: 660px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 14px;
+        color: black;
+    }
+    .bg-top{
+        background: url(../../images/top.png);
+        width: 100%;
+        height: 62px;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width:1560px){
+  
+    a:hover{
+        text-decoration: none;
+    }
+    .miaosha{
+        background-image: url(../../images/秒杀背景.png);
+        padding-bottom: 80px;
+        background-position: -400px 0px;
+        background-repeat: repeat-y;
+        position: relative;
+    }
+    .time-container{
+        position: absolute;
+        height:450px;
+        width: 200px;
+        top:60px;
+        left: 370px;
+    }
+    .time-container li{
+        list-style-type: none;
+    }
+    .line{
+        font-weight: 400;
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 16px;
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        overflow:hidden;
+    }
+    .line:hover{
+        color:#fed719;
+        text-decoration:none;
+        width:auto;
+        border-color:#fed719;
+    }
+    .focus{
+        width: 200px;
+    }
+    .focus .time1{
+        font-size:32px;
+        padding-right:10px;
+    }
+    .flex{
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:1px;
+        line-height:0;
+        font-size:0;
+        background:#fff;
+        width:100px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .focus .flex{
+        width: 200px;    
+    }
+    .list{
+        left: 190px;
+        position: relative;
+        top:60px;
+        width: 660px;
+        margin: auto;
+        background-color: #fff;
+    }
+    .goods{
+        /* margin-top:40px; */
+        position: relative;
+        margin-top:20px;
+    }
+    .goods-first{
+        position: relative;
+        margin-top:0px!important;   
+    }
+    .goods-img{
+        width: 270px;
+        height: 270px;
+        border: 1px solid #fff;
+    }
+    .goods-img:hover{
+        opacity: 0.8;
+    }
+    .list-title{
+        font-family:'\5FAE\8F6F\96C5\9ED1';
+        position: absolute;
+        top:0px;
+        left: 0px;
+        padding-left: 300px;
+        padding-top:20px;
+    }
+    .goods-price{
+        position: absolute;
+        top:60px;
+        margin-top:10px;
+        height: 70px;
+        width: 100%;
+        padding-left: 300px;
+        padding-top:20px;
+    }
+    .title-link{
+        display: block;
+        width: 350px;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .nowPrice{
+        width: 180px;
+        color: red;
+        height: 21px;
+    }
+    .sec-price{
+        font-size:28px;
+        font-family:Tahoma;
+        font-weight:700;
+        color: red;
+    }
+    .money{
+        font-style:normal;
+        font-family:Tahoma;
+        color: red;
+    }
+    .original{
+        width:30%;
+        text-decoration:line-through;
+    }
+    .original .money{
+        font-style:normal;
+        font-family:Tahoma;
+        color: black;
+    }
+    .ratio{
+        width:20%;
+    }
+    .price-button{
+        position: absolute;
+        top:180px;
+        left: 300px;
+    }
+    .buy{
+        display: block;
+        width:160px;
+        height: 60px;
+        background-color: #fed623;
+        border-radius:2px 0 0 2px;
+        color:#784d0f;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        font-size:18px;
+        float: left;
+    }
+    .buy:hover{
+        text-decoration:none;
+        color:#784d0f;
+        background-color:#ffdf45;
+    }
+    .hd{
+        position: relative;
+        float: left;
+        display: block;
+        width:140px;
+        height: 60px;
+        background-color: #b92a2f;
+        border-radius:2px 0 0 2px;
+        color:#784d0f;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        font-size:18px;
+       
+    }
+    .hd-arrow{
+        position: absolute;
+        left: 123px;
+        border: 30px solid #b92a2f;
+        border-right:30px solid #fff;
+    }
+    .name{
+        left: 20px;
+        position: absolute;
+        display:block;
+        top:-10px;
+        font-size:14px;
+        color: #fff;
+    }
+    .look{
+        left: 20px;
+        position: absolute;
+        display:block;
+        color:#fed623;
+        font-size:14px;
+        font-family:'\5FAE\8F6F\96C5\9ED1';
+        top:5px;
+    }
+    .all{
+        margin-left: 620px;
+        margin-top:90px;
+        background: #FFD716;
+        width: 660px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 14px;
+        color: black;
+    }
+    .bg-top{
+        background: url(../../images/top.png);
+        background-position-x: -160px;
+        width: 100%;
+        height: 62px;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width:1400px) {
+    a{
+        color: black;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .miaosha{
+        background-image: url(../../images/秒杀背景.png);
+        padding-bottom: 80px;
+        background-position: -550px 0px;
+        background-repeat: repeat-y;
+        position: relative;
+    }
+    .time-container{
+        position: absolute;
+        height:450px;
+        width: 200px;
+        top:60px;
+        left: 220px;
+    }
+    .time-container li{
+        list-style-type: none;
+    }
+    .line{
+        font-weight: 400;
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 16px;
+        width: 100px;
+        height: 45px;
+        line-height: 45px;
+        overflow:hidden;
+    }
+    .line:hover{
+        color:#fed719;
+        text-decoration:none;
+        width:auto;
+        border-color:#fed719;
+    }
+    .focus{
+        width: 200px;
+    }
+    .focus .time1{
+        font-size:32px;
+        padding-right:10px;
+    }
+    .flex{
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:1px;
+        line-height:0;
+        font-size:0;
+        background:#fff;
+        width:100px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .focus .flex{
+        width: 200px;    
+    }
+    .list{
+        left: 190px;
+        position: relative;
+        top:60px;
+        width: 660px;
+        margin: auto;
+        background-color: #fff;
+    }
+    .goods{
+        /* margin-top:40px; */
+        position: relative;
+        margin-top:20px;
+    }
+    .goods-first{
+        position: relative;
+        margin-top:0px!important;   
+    }
+    .goods-img{
+        width: 270px;
+        height: 270px;
+        border: 1px solid #fff;
+    }
+    .goods-img:hover{
+        opacity: 0.8;
+    }
+    .list-title{
+        font-family:'\5FAE\8F6F\96C5\9ED1';
+        position: absolute;
+        top:0px;
+        left: 0px;
+        padding-left: 300px;
+        padding-top:20px;
+    }
+    .goods-price{
+        position: absolute;
+        top:60px;
+        margin-top:10px;
+        height: 70px;
+        width: 100%;
+        padding-left: 300px;
+        padding-top:20px;
+    }
+    .title-link{
+        display: block;
+        width: 350px;
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .nowPrice{
+        width: 180px;
+        color: red;
+        height: 21px;
+    }
+    .sec-price{
+        font-size:28px;
+        font-family:Tahoma;
+        font-weight:700;
+        color: red;
+    }
+    .money{
+        font-style:normal;
+        font-family:Tahoma;
+        color: red;
+    }
+    .original{
+        width:30%;
+        text-decoration:line-through;
+    }
+    .original .money{
+        font-style:normal;
+        font-family:Tahoma;
+        color: black;
+    }
+    .ratio{
+        width:20%;
+    }
+    .price-button{
+        position: absolute;
+        top:180px;
+        left: 300px;
+    }
+    .buy{
+        display: block;
+        width:160px;
+        height: 60px;
+        background-color: #fed623;
+        border-radius:2px 0 0 2px;
+        color:#784d0f;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        font-size:18px;
+        float: left;
+    }
+    .buy:hover{
+        text-decoration:none;
+        color:#784d0f;
+        background-color:#ffdf45;
+    }
+    .hd{
+        position: relative;
+        float: left;
+        display: block;
+        width:140px;
+        height: 60px;
+        background-color: #b92a2f;
+        border-radius:2px 0 0 2px;
+        color:#784d0f;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        font-size:18px;
+       
+    }
+    .hd-arrow{
+        position: absolute;
+        left: 123px;
+        border: 30px solid #b92a2f;
+        border-right:30px solid #fff;
+    }
+    .name{
+        left: 20px;
+        position: absolute;
+        display:block;
+        top:-10px;
+        font-size:14px;
+        color: #fff;
+    }
+    .look{
+        left: 20px;
+        position: absolute;
+        display:block;
+        color:#fed623;
+        font-size:14px;
+        font-family:'\5FAE\8F6F\96C5\9ED1';
+        top:5px;
+    }
+    .all{
+        margin-left: 620px;
+        margin-top:90px;
+        background: #FFD716;
+        width: 660px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 14px;
+        color: black;
+    }
+    .bg-top{
+        background: url(../../images/top.png);
+        background-position-x: -160px;
+        width: 100%;
+        height: 62px;
+        background-repeat: no-repeat;
+    }
+}

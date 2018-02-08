@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>注册</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!--header-->
+<%= require('html-loader!./head.html')%>
+<!--内容-->
+<div class="signin-content">
+    <div class="login container">
+        <div class="login-content container">
+           <div class="login-header">
+               <div id="toEmail">邮箱注册</div>
+               <div id="toPhone">手机号注册</div>
+           </div>
+           <div class="register-box">
+                <div class="register-email">
+                    <div>
+                        <div style="position:relative;margin-bottom:5px;">
+                            <span><i class="am-icon-envelope-o"></i></span>
+                            <input type="text" placeholder="请输入邮箱账号">
+                        </div>
+                        <div style="position:relative;margin-bottom:5px;">
+                            <span><i class="am-icon-lock"></i></span>
+                            <input type="text" placeholder="设置密码">
+                        </div>
+                        <div style="position:relative;margin-bottom:5px;">
+                            <span><i class="am-icon-lock"></i></span>
+                            <input type="text" placeholder="确认密码">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="readMe">
+                        <label for="readMe">点击表示您同意接受商城协议</label>
+                    </div>
+                    <div>
+                        <button class="loginsubmit">注册</button>
+                    </div>
+                </div>
+                <div class="register-phone">
+                    <div>
+                        <div style="position:relative;margin-bottom:5px;">
+                            <span><i class="am-icon-mobile-phone am-icon-md"></i></span>
+                            <input type="text" placeholder="请输入手机号">
+                        </div>
+                        <div style="position:relative;margin-bottom:5px;">
+                                <span><i class="am-icon-code-fork"></i></span>
+                                <input type="text" placeholder="请输入验证码" id="code">
+                                <button class="getCode">获取验证码</button>
+                        </div>
+                        <div style="position:relative;margin-bottom:5px;">
+                            <span><i class="am-icon-lock"></i></span>
+                            <input type="text" placeholder="设置密码">
+                        </div>
+                        <div style="position:relative;margin-bottom:5px;">
+                            <span><i class="am-icon-lock"></i></span>
+                            <input type="text" placeholder="确认密码">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="readMe">
+                        <label for="readMe">点击表示您同意接受商城协议</label>
+                    </div>
+                    <div>
+                        <button class="loginsubmit">注册</button>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<%= require('html-loader!./footer.html')%>
+<script src="../../dist/index.js"></script>
+</body>
+</html>

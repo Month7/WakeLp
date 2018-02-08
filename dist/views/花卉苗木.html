@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>花卉苗木</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="../css/index.css" rel="stylesheet"></head>
+<body>
+    <!--header-->
+    <div class="header container">
+    <div class="header-top">
+        <div class="messagel">
+            <a href="login.html">亲，请登录</a>
+            <a href="register.html">免费注册</a>
+        </div>
+        <div class="messager">
+                <div class="topMessage home">
+                        <div class="menu-hd"><a href="index.html" target="_top" class="h">商城首页</a></div>
+                    </div>
+                    <div class="topMessage my-shangcheng">
+                        <div class="menu-hd MyShangcheng"><a href="person.html" target="_top"><i class="glyphicon glyphicon-user"></i>个人中心</a></div>
+                    </div>
+                    <div class="topMessage mini-cart">
+                        <div class="menu-hd"><a id="mc-menu-hd" href="cart.html" target="_top"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+                    </div>
+                    <div class="topMessage favorite">
+                    <div class="menu-hd"><a href="购买页.html" target="_top"><i class="glyphicon glyphicon glyphicon-heart"></i><span>收藏夹</span></a></div>
+        </div>
+    </div>
+</div>
+<div class="header-nav">
+    <div class="header-logo">
+        <a href="index.html"><img src="../images/logobig.png"></a>
+    </div>
+    <div class="header-search">
+        <input type="text" placeholder="搜索">
+    </div>
+    <button class="header-searchButton">搜索</button>
+</div>
+</div>
+    <!--内容-->
+    <div class="market-main">
+            <a href="signin.html"><button class="publish">我<br>要<br>发<br>布</button></a>
+            
+            <div class="container container-special">
+                <div class="market-menu">
+                    <div class="tab-one">
+                        <div class="tab-nav">
+                            <span>分类：</span>
+                        </div> 
+                        <div class="tab-content">
+                            <a href="生鲜水果.html" title="生鲜水果">生鲜水果</a>
+                            <a href="新鲜蔬菜.html">新鲜蔬菜</a>
+                            <a href="畜牧水产.html">畜牧水产</a>
+                            <a href="米面粮油.html">米面粮油</a>
+                            <a href="农副产品.html">农副产品</a>
+                            <a href="农资产品.html">农资产品</a>
+                            <a href="花卉苗木.html" class="selected">花卉苗木</a>
+                            <a href="中草药材.html">中草药材</a>
+                            <a href="地方特产.html">地方特产</a>
+                            <a href="农业机械.html">农业机械</a>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="tab-drop">
+                        <div class="tab-content-drop">
+                            <a href="#">竹类</a>
+                            <a href="#">草坪</a>
+                            <a href="#">国槐</a>
+                            <a href="#">白皮松</a>
+                            <a href="#">小叶黄杨</a>
+                            <a href="#">花卉</a>
+                            <a href="#">红豆杉</a>
+                            <a href="#">罗汉松</a>
+                            <a href="#">红叶石楠</a>
+                            <a href="#">雪松苗</a>
+                            <a href="#">榕树</a>
+                            <a href="#">樟子松</a>
+                            <a href="#">云杉</a>
+                            <a href="#">冬青</a>
+                            <a href="#">龙柏</a>
+                            <a href="#">杜英</a>
+                            <a href="#">油松</a>
+                            <a href="#">金丝楠木</a>
+                            <a href="#">红皮榕</a>
+                            <a href="#">竹柏</a>
+                            <a href="#">红枫</a>
+                            <a href="#">樱花树苗</a>
+                            <a href="#">白蜡</a>
+                            <a href="#">菊花</a>
+                            <a href="#">荷花</a>
+                            <a href="#">盆栽金银花</a>
+                            <a href="#">玫瑰花</a>
+                            <a href="#">茉莉花</a>
+                            <a href="#">金手指</a>
+                            <a href="#">桔梗</a>
+                            <a href="#">兰花</a>
+                            <a href="#">勿忘我</a>
+                            <a href="#">梅花</a>
+                            <a href="#">昙花</a>
+                            <a href="#">樱花</a>
+                            <a href="#">丁香</a>
+                            <a href="#">牡丹</a>
+                            <a href="#">虞美人</a>
+                            <a href="#">雏菊</a>
+                            <a href="#">鲁冰花</a>
+                            <a href="#">仙人掌</a>
+                            <a href="#">风信子</a>
+                            <a href="#">紫罗兰</a>
+                            <a href="#">桃花</a>
+                            <a href="#">夜来香</a>
+                            <a href="#">含羞草（观花）</a>
+                            <a href="#">迷失香</a>
+                            <a href="#">郁金香</a>
+                            <a href="#">海棠花</a>
+                            <a href="#">月季</a>
+                            <a href="#">康乃馨</a>
+                            <a href="#">石竹</a>
+                            <a href="#">白兰</a>
+                            <a href="#">薰衣草</a>
+                            <a href="#">天堂鸟花</a>
+                            <a href="#">牵牛花</a>
+                            <a href="#">佛手掌</a>
+                            <a href="#">非洲紫罗兰</a>
+                        </div>
+                        </div>
+                        <div class="tab-one">
+                            <div class="tab-nav">
+                                <span>地区：</span>
+                            </div> 
+                            <div class="tab-content">
+                                <a href="#" class="selected">全国</a>
+                                <a href="#" title="北京市">北京市</a>
+                                <a href="#">上海市</a>
+                                <a href="#">天津市</a>
+                                <a href="#">重庆市</a>
+                                <a href="#">河北省</a>
+                                <a href="#">山西省</a>
+                                <a href="#">内蒙古</a>
+                                <a href="#">辽宁省</a>
+                                <a href="#">吉林省</a>
+                                <a href="#">黑龙江省</a>
+                                <a href="#">河南省</a> 
+                            </div> 
+                        </div>
+                        <div class="tab-drop">
+                                <div class="tab-content-drop-special">
+                                <a href="#">湖北省</a>
+                                <a href="#">湖南省</a>
+                                <a href="#">广东省</a>
+                                <a href="#">广西</a>
+                                <a href="#">海南省</a>
+                                <a href="#">四川省</a>
+                                </div>
+                        </div>                  
+                </div>
+                <div style="clear:both;"></div>
+                <div>
+                    <img src="site/苗木农资.png">
+                </div>
+                <div id="row1">
+                    <div class="col-md-3 col-xs-6  market-each ">
+                            <a href="购买页.html"><img  src="images/loading.gif" data-src="花卉苗木/1-1.jpg"></a>
+                        <div class="market-title">
+                                <p>供应白皮松油松华山松蜀侩侧柏苗</p>
+                            <div class="market-text">
+                                <div class="market-price">
+                                    <p>面议</p>
+                                </div>
+                                <div class="market-cart">
+                                    <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/1-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>供应国槐苗苹果苗白皮松油松蜀侩</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/1-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>金叶水蜡/金叶水蜡小苗/金叶水蜡球/金叶女贞/金叶水蜡容器苗</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/1-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>银川小叶黄杨/新疆紫惠槐/甘肃东北连翘/山西金山绣线菊</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="row2">
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/2-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>供应百慕大草坪，百慕大与黑麦草混播草坪</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/2-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>沙坪果岭草，百慕大与黑麦草混播电</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/2-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>石榴树盆栽</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/2-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>花海带</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="row3">
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/3-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>薰衣草种子</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥400.00/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/3-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>铁线莲</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/3-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>铁线莲</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="花卉苗木/3-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>铁线莲</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="row4">
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/4-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>贝丝玫瑰花</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/4-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>科瑞玫瑰花</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/4-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>优质月季苗木</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/4-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>鲜花配送</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div id="row5">
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/5-1.png"></a>
+                            <div class="market-title">
+                                    <p>柳叶马鞭草种子价格报价</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥120.00/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/5-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>供应 叶必绿 植物生长调节剂</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/5-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>果树红蜘蛛杀螨剂哪种好 打红蜘蛛专用药</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p> ￥1.00/套</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6  market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="花卉苗木/5-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>长期供应饲料盐，饲料添加剂氯化钠</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥308.00/吨</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    <div style="clear:both"></div>
+               </div>
+            </div>
+        </div>
+        <!---->
+          <!---->
+          <!--右侧导航-->
+          <div class="right-banner container" style="padding:0">
+                <div class="right-banner-content">
+                    <div class="user">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="rb-cart">
+                        <a href="cart.html" target="_blank" style="color:white;"><span class="glyphicon glyphicon-shopping-cart">购物车</span></a>
+                    </div>
+                    <div class="rs-money">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="rs-like">
+                        <span class="glyphicon glyphicon-heart-empty"></span>
+                    </div>
+                    <div class="rs-er">
+                        <span class="glyphicon glyphicon-qrcode"></span>
+                    </div>
+                </div>
+            </div>
+        <div class="rbl container" style="padding:0">
+                <div class="rbl-content">
+                    <div class="rbl-hurt">
+                        我要充值
+                    </div>
+                    <div class="rbl-love">
+                        我的收藏
+                    </div>
+                    <div class="rbl-user">
+                        <img src="images/no-img_mid_.jpg " />
+                        <span>欢迎来到绿速康</span>
+                        <span>请登录</span>
+                        <hr>
+                        <div class="OL">
+                            <div class="myOrder"><a href="#">我的订单</a></div>
+                            <div class="myLike"><a href="#">我的收藏</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--页脚-->
+    <div class="mobie-slide">
+    上拉继续加载更多
+</div>
+    <div class="footer_mobie">
+    © 2018 WakeLp.COM 版权所有
+</div>
+<div class="footer">
+<div class="footer_child">
+<img src="data:image/gif;base64,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"/>
+<div class="footer_child_right">
+        <p>
+                <a href="购买页.html">主页</a>
+                <span>|</span>
+                <a href="购买页.html">关于我们</a>
+                <span>|</span>
+                <a href="购买页.html">服务</a>
+                <span>|</span>
+                <a href="购买页.html">活动专区</a>
+                <span>|</span>
+                <a href="购买页.html">联系我们</a>
+        </p>
+        <p><spe>© 2018 WakeLp.COM 版权所有</spe></p>
+</div>
+</div>
+</div>
+<div class="mobie-bottom">
+        <a href="index.html" class="mobie-selected"><i class="glyphicon glyphicon-home"></i>首页</a>
+        <a href="sort.html"><i class="glyphicon glyphicon-th-list"></i>分类</a>
+        <a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>购物车</a>
+        <a href="person.html"><i class="glyphicon glyphicon-user"></i>我的</a>
+</div>
+<script type="text/javascript" src="../js/base.js"></script><script type="text/javascript" src="../index.js"></script></body>
+</html>

@@ -2,21 +2,34 @@
  * @Author: yin 
  * @Date: 2018-01-29 18:42:10 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-02-02 22:51:35
+ * @Last Modified time: 2018-02-09 00:47:33
  */
 'use strict';
 
 require('./index.css');
 require('./footer.css');
 require('./head.css');
+require('./person.css');
 require('./style.js');
 require('./carousel.js');
 require('./float.js');
+require('./magnifying.js');
+require('./cart.js');
+require('./loadImg.js');
+require('./mobie.js');
+require('./market.css');
+require('./sort.css');
+require('./cart.css');
+require('./register.css');
+require('./buy.css');
+require('./促销.css');
 // require('./test.js');
 require('./lazyLoad.js');
 // require('../common/amazeui.css');
 require('../login/login.css');
+require('./services.css');
 require('../login/login.js');
+require('./register.js');
 //加载通用模块
 var common=require('../../util/common.js');
 // var Mock = require('mockjs')

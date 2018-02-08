@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>购物车</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<!--header-->
+<%= require('html-loader!./head.html')%>
+<!--内容-->
+<div class="cart-">
+    <div class="cart-title" style="float:right;">
+        <span class="title-text">已选商品（不含运费）</span>
+        <span class="title-price">￥0.00</span>
+        <button class="title-button">结算</button>
+    </div>
+    <div class="cart-main">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th><img src="../images/cartNotSelected.png" class="radios-check" isselect="false">全选</th>
+                    <th>商品信息</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody style="border:1px solid #CCCCCC">
+                <tr class="cart-item" oid="1">
+                    <td class="mobie-item">
+                        <img src="../images/cartNotSelected.png" class="radio-check" isselected="false" oid="1">
+                        <a href="#"><img src="../images/cart/1.jpg" class="cart-picture"></a>
+                    </br>
+                        <a id="mobie-delete" href="#">删除</a>
+                    </td>
+                    <td>
+                        <div class="text-link">
+                            <a href="#" class="td-text">大白菜</a>
+                            <div class="renzheng-img">
+                                <img src="../images/creditcard.png">
+                                <img src="../images/7day.png">
+                                <img src="../images/promise.png">
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="deletePrice">￥0.50</span>
+                        <span class="nowPrice" oid="1">￥0.50</span>
+                    </td>
+                    <td>
+                        <div class="changeNumber">
+                            <a href="#" class="decrease" pid="1">-</a>
+                            <input type="text" oid="1" value="1" class="text">
+                            <a href="#" class="increase" pid="1">+</a>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="calPrice" oid="1">￥0.50</span>
+                    </td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+            </tbody>
+            <tbody style="border:1px solid #CCCCCC">
+                    <tr class="cart-item ">
+                        <td class="mobie-item">
+                            <img src="../images/cartNotSelected.png" isselected="false" class="radio-check" oid="2">
+                            <a href="#"><img src="../images/cart/2.jpg" class="cart-picture"></a>
+                        </br>
+                            <a id="mobie-delete" href="#">删除</a>
+                        </td>
+                        <td>
+                            <div class="text-link">
+                                <a href="#" class="td-text">农民自家种植橙子大量出售，色泽口感一流..</a>
+                                <div class="renzheng-img">
+                                    <img src="../images/creditcard.png">
+                                    <img src="../images/7day.png">
+                                    <img src="../images/promise.png">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="deletePrice">￥3.00</span>
+                            <span class="nowPrice" oid="2">￥2.50</span>
+                        </td>
+                        <td>
+                            <div class="changeNumber">
+                                <a href="#" class="decrease" pid="2">-</a>
+                                <input type="text" value="1" oid="2" class="text">
+                                <a href="#" class="increase" pid="2">+</a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="calPrice" oid="2">￥2.50</span>
+                        </td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                </tbody>
+                <tbody style="border:1px solid #CCCCCC">
+                    <tr class="cart-item">
+                        <td class="mobie-item">
+                            <img src="../images/cartNotSelected.png" isselected="false" class="radio-check" oid="3">
+                            <a href="#"><img src="../images/cart/3.jpg" class="cart-picture"></a>
+                        </br>
+                            <a id="mobie-delete" href="#">删除</a>
+                        </td>
+                        <td>
+                            <div class="text-link">
+                                <a href="#" class="td-text">惠州红心火龙果</a>
+                                <div class="renzheng-img">
+                                    <img src="../images/creditcard.png">
+                                    <img src="../images/7day.png">
+                                    <img src="../images/promise.png">
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="deletePrice">￥13.38</span>
+                            <span class="nowPrice" oid="3">￥9.38</span>
+                        </td>
+                        <td>
+                            <div class="changeNumber">
+                                <a href="#" class="decrease" pid="3">-</a>
+                                <input type="text" value="1" oid="3" class="text">
+                                <a href="#" class="increase" pid="3">+</a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="calPrice" oid="3">￥9.38</span>
+                        </td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                </tbody>
+        </table>
+        <div class="footer_mobie">
+                © 2017 LVSUKANG.COM 版权所有
+        </div>
+    </div>
+    <div class="cart-bottom">
+        <img src="../images/cartNotSelected.png" class="select-img radios-check" isselect="false">
+        <span>全选</span>
+        <div class="cart-right" style="float:right">
+            <span>已选商品<span class="total">0</span>件</span>
+            <span>合计 （不含运费）</span>
+            <span class="bottom-price">￥0.00</span>
+            <button class="bottom-button" disabled="disabled">结算</button>
+        </div>
+    </div>
+</div>
+<div class="mobie-cart">
+        <div id="mobie-allSelect">
+            <img src="../images/cartNotSelected.png" class="select-img radios-check" isselect="false">
+            <span>全选</span>
+        </div>
+        <div class="cart-right">
+            <div>
+                <span>已选商品<span class="total">0</span>件</span>
+                <span>合计</span>
+                <span class="bottom-price">￥0.00</span>
+            </div>
+            <button class="bottom-button" disabled="disabled">结算</button>
+        </div>
+</div>
+
+
+<!--右侧导航栏-->
+<div class="right-banner container" style="padding:0">
+        <div class="right-banner-content">
+            <div class="user">
+                <span class="glyphicon glyphicon-user"></span>
+            </div>
+            <div class="rb-cart">
+                <a href="cart.html" target="_blank" style="color:white;"><span class="glyphicon glyphicon-shopping-cart">购物车</span></a>
+            </div>
+            <div class="rs-money">
+                <span class="glyphicon glyphicon-usd"></span>
+            </div>
+            <div class="rs-like">
+                <span class="glyphicon glyphicon-heart"></span>
+            </div>
+            <div class="rs-er">
+                <span class="glyphicon glyphicon-qrcode"></span>
+            </div>
+        </div>
+    </div>
+    <div class="rbl container" style="padding:0">
+        <div class="rbl-content">
+            <div class="rbl-hurt">
+                我要充值
+            </div>
+            <div class="rbl-love">
+                我的收藏
+            </div>
+            <div class="rbl-user">
+                <a href="person.html"><img src="../images/portrait.jpg " /></a>
+                <span>欢迎来到绿速康</span>
+                <span>请登录</span>
+                <hr>
+                <div class="OL">
+                    <div class="myOrder"><a href="#">我的订单</a></div>
+                    <div class="myLike"><a href="#">我的收藏</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--页脚-->
+<div class="footer">
+    <div class="footer_child container">
+        <img src="../images/footer-logo.gif"/>
+        <div class="footer_child_right">
+                <p>
+                        <a href="#">主页</a>
+                        <span>|</span>
+                        <a href="#">关于我们</a>
+                        <span>|</span>
+                        <a href="#">服务</a>
+                        <span>|</span>
+                        <a href="#">活动专区</a>
+                        <span>|</span>
+                        <a href="#">联系我们</a>
+                </p>
+                <p><spe>© 2017 LVSUKANG.COM 版权所有</spe></p>
+        </div>
+    </div>
+</div>
+<div class="mobie-bottom">
+<a href="index.html"><i class="glyphicon glyphicon-home"></i>首页</a>
+<a href="index.html"><i class="glyphicon glyphicon-th-list"></i>分类</a>
+<a href="cart.html" class="mobie-selected"><i class="glyphicon glyphicon-shopping-cart"></i>购物车</a>
+<a href="person.html"><i class="glyphicon glyphicon-user"></i>我的</a>
+</div>
+<script src="../../dist/index.js"></script>
+</body>
+</html>

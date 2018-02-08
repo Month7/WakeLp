@@ -1,0 +1,205 @@
+.cart-{
+    max-width: 1043px;
+    margin: 10px auto;
+}
+.title-button{
+    background-color: #AAAAAA;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    color: white;
+    width: 53px;
+    height: 25px;
+}
+.title-price{
+    color: #ff9900;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+.cart-bottom{
+    background-color: #E5E5E5;
+    line-height: 50px;
+    margin: 20px 0;
+    color: black;
+    padding-left: 20px;
+}
+.bottom-button{
+    background-color: #AAAAAA;
+    border-width: 0;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size:20px;
+    text-align: center;
+}
+.select-img{
+    cursor: pointer;
+}
+.total{
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bottom-price{
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*=======================================中间的内容=================================*/
+.cart-table{
+    width: 100%;
+    font-size: 12px;
+}
+.cart-table tbody td{
+    padding: 20px 20px;
+}
+.cart-table thead th{
+    font-weight: normal;
+    padding: 20px 20px;
+    color: #3C3C3C;
+}
+.cart-picture{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eeeeee;
+    padding: 1px;
+}
+.td-text{
+    color:#3c3c3c;
+}
+.td-text:hover{
+    color: #ff9900;
+}
+.text-link{
+    height: 80px;
+    position: relative;
+}
+.renzheng-img{
+    position: absolute;
+    height: 20px;
+    bottom: 0;
+}
+.deletePrice{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #9C9C9C;
+    display: block;
+    font-weight: bold;
+}
+.nowPrice{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9900;
+    font-family: Arial;
+}
+.changeNumber{
+    width: 90px;
+    border: 1px solid #E5E5E5;
+}
+.changeNumber a{
+    display: inline-block;
+    width: 15px;
+    color: black;
+    text-decoration: none;
+}
+.changeNumber a:hover{
+    text-decoration: none;
+}
+.changeNumber input{
+    display: inline-block;
+    width: 42px;
+    border: 1px solid #AAAAAA;
+}
+.radio-check{
+    cursor: pointer;
+}
+.radios-check{
+    cursor: pointer;
+}
+.mobie-cart{
+    display: none;
+}
+@media(max-width:768px){
+    .renzheng-img{
+        display: none;
+    }
+    .cart-{
+        margin: 0;
+        margin-top:1.3rem;
+        width: 100%;
+        margin-bottom:2.2rem;
+    }
+    .cart-main{
+        width: 100%;
+        margin: 0;
+    }
+    .cart-title{
+        display: none;
+    }
+    .cart-table{
+        width: 100%;
+    }
+    .changeNumber{
+        display: none;
+    }
+    .cart-table thead{
+        display: none;
+    }
+    .text-link{
+        margin-top:1.7rem!important;
+    }
+    td{
+        padding: 0!important;
+    }
+    .cart-bottom{
+        display: none;
+    }
+    .mobie-item{
+        padding: 0.3rem!important;
+    }
+    .mobie-cart{
+        position: fixed;
+        bottom: 1rem;
+        width: 100%;
+        height: 1.2rem;
+        background: #fff;
+        border: 1px solid #EEEEEE;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-button{
+        width: 2rem;
+        font-size: 0.3rem;
+        line-height: 1rem;
+        text-align: center;
+        font-size: 0.4rem;
+    }
+    #mobie-allSelect{
+        margin-top:0.3rem;
+        width: 30%;
+        font-size: 0.4rem;
+    }
+    .calPrice{
+        display: none;
+    }
+    .cart-right{
+        width: 70%;
+        font-size: 0.4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-right span{
+        font-size: 0.4rem;
+    }
+    #mobie-delete{
+        display: inline;
+        color: black!important;
+    }
+    .total{
+        font-size: 0.4rem;
+    }
+    .bottom-price{
+        font-size: 0.4rem;
+    }
+}

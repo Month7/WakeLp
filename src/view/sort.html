@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>分类</title>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+ <!--头部-->
+ <div class="header container">
+    <div class="header-top">
+        <div class="messagel">
+            <a href="signin.html">亲，请登录</a>
+            <a href="register.html">免费注册</a>
+        </div>
+        <div class="messager">
+                <div class="topMessage home">
+                        <div class="menu-hd"><a href="index.html" target="_top" class="h">商城首页</a></div>
+                    </div>
+                    <div class="topMessage my-shangcheng">
+                        <div class="menu-hd MyShangcheng"><a href="生鲜水果.html" target="_top"><i class="glyphicon glyphicon-user"></i>个人中心</a></div>
+                    </div>
+                    <div class="topMessage mini-cart">
+                        <div class="menu-hd"><a id="mc-menu-hd" href="cart.html" target="_top"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+                    </div>
+                    <div class="topMessage favorite">
+                    <div class="menu-hd"><a href="生鲜水果.html" target="_top"><i class="glyphicon glyphicon glyphicon-heart"></i><span>收藏夹</span></a></div>
+        </div>
+    </div>
+</div>
+<div class="header-nav">
+    <div class="header-logo">
+        <a href="index.html"><img src="images/logobig.png"></a>
+    </div>
+    <div class="header-search">
+        <input type="text" placeholder="搜索">
+    </div>
+    <button class="header-searchButton">搜索</button>
+</div>
+</div>
+<div class="sortAll">
+    <div>全部分类</div>
+    <div><a href="index.html">返回</a></div>
+</div>
+<div class="sort-content">
+    <div class="sort-nav">
+                <div class="drop-item" xid="1">
+                    生鲜水果
+                </div>
+                <div class="drop-item" xid="2">
+                    新鲜蔬菜
+                </div>
+                <div class="drop-item" xid="3">
+                    畜牧水产
+                </div>
+                <div class="drop-item" xid="4">
+                    米面粮油
+                </div>
+                <div class="drop-item" xid="5">
+                    农副产品
+                </div>
+                <div class="drop-item" xid="6">
+                    农资产品
+                </div>
+                <div class="drop-item" xid="7">
+                    花卉苗木
+                </div>
+                <div class="drop-item" xid="8">
+                    中草药材
+                </div>
+                <div class="drop-item" xid="9">
+                    地方特产
+                </div>
+                <div class="drop-item" xid="10">
+                    农业机械
+                </div>
+        </div>
+        <div class="sort-main">
+            <!--???-->
+            <div class="sort-product">
+                    <div class="sortProduct" xid="1">
+                        <div class="row">
+                            <a href="生鲜水果.html" style="color:blue">草莓</a>
+                            <a href="生鲜水果.html">荔枝</a>
+                            <a href="生鲜水果.html" style="color:blue">梨</a>
+                            <a href="生鲜水果.html" style="color:blue">苹果</a>
+                            <a href="生鲜水果.html">香蕉</a>
+                            <a href="生鲜水果.html">菱角</a>
+                            <a href="生鲜水果.html">沙棘果</a>
+                            <a href="生鲜水果.html" style="color:blue">菠萝蜜</a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                            <a href="生鲜水果.html">柑桔</a>
+                            <a href="生鲜水果.html">橙</a>
+                            <a href="生鲜水果.html" style="color:blue">火龙果</a>
+                            <a href="生鲜水果.html">柠檬</a>
+                            <a href="生鲜水果.html" style="color:blue">葡萄</a>
+                            <a href="生鲜水果.html">大红果</a>
+                            <a href="生鲜水果.html">瓜果</a>
+                            <a href="生鲜水果.html" style="color:blue">油桃</a>
+                            <a href="生鲜水果.html">海棠果</a>
+                            <a href="生鲜水果.html">芭蕉</a>
+                        </div>
+                    <div class="separtor"></div>
+                        <div class="row">
+                            <a href="生鲜水果.html">芒果</a>
+                            <a href="生鲜水果.html">提子</a>
+                            <a href="生鲜水果.html">其他水果</a>
+                            <a href="生鲜水果.html">菠萝</a>
+                            <a href="生鲜水果.html">柚子</a>
+                            <a href="生鲜水果.html">柑</a>
+                            <a href="生鲜水果.html">金桔</a>
+                            <a href="生鲜水果.html">李</a>
+                        </div>
+                    <div class="separtor"></div>
+                    <div class="row">
+                        <a href="生鲜水果.html" style="color:blue">杏</a>
+                        <a href="生鲜水果.html">圣女果</a>
+                        <a href="生鲜水果.html">樱桃</a>
+                        <a href="生鲜水果.html">车厘子</a>
+                        <a href="生鲜水果.html" style="color:blue">龙眼</a>
+                        <a href="生鲜水果.html">青枣</a>
+                        <a href="生鲜水果.html">金星果</a>
+                        <a href="生鲜水果.html" style="color:blue">树莓</a>
+                    </div>
+                    <div class="separtor"></div>
+                    <div class="row">
+                        <a href="生鲜水果.html">甘蔗</a>
+                        <a href="生鲜水果.html">山竹</a>
+                        <a href="生鲜水果.html">杨桃</a>
+                        <a href="生鲜水果.html" style="color:blue">杨梅</a>
+                        <a href="生鲜水果.html" style="color:blue;">无花果</a>
+                        <a href="生鲜水果.html">黄金瓜</a>
+                        <a href="生鲜水果.html">黄桃</a>
+                        <a href="生鲜水果.html">猫屎瓜</a>
+                        <a href="生鲜水果.html">刺角瓜</a>
+                        <a href="生鲜水果.html">含羞果</a>
+                    </div>
+                    <div class="separtor"></div>
+                    <div class="row">
+                        <a href="生鲜水果.html">毛桃</a>
+                        <a href="生鲜水果.html">榴莲</a>
+                        <a href="生鲜水果.html" style="color:blue;">山楂</a>
+                        <a href="生鲜水果.html">番石榴</a>
+                        <a href="生鲜水果.html">橄榄</a>
+                        <a href="生鲜水果.html">神秘果</a>
+                        <a href="生鲜水果.html">牛油果</a>
+                        <a href="生鲜水果.html">红枣</a>
+                    </div>
+                    <div class="separtor"></div>
+                    <div class="row">
+                        <a href="生鲜水果.html">香瓜</a>
+                        <a href="生鲜水果.html">椰子</a>
+                        <a href="生鲜水果.html">蓝莓</a>
+                        <a href="生鲜水果.html">槟榔</a>
+                        <a href="生鲜水果.html">灯笼果</a>
+                        <a href="生鲜水果.html">羊奶果</a>
+                        <a href="生鲜水果.html">苹果</a>
+                        <a href="生鲜水果.html">香蕉</a>
+                    </div>
+                    <div class="separtor"></div>
+                    <div class="row">
+                        <a href="生鲜水果.html">乌梅</a>
+                        <a href="生鲜水果.html">百香果</a>
+                        <a href="生鲜水果.html">梅子</a>
+                        <a href="生鲜水果.html">羊奶果</a>
+                        <a href="生鲜水果.html">红枣</a>
+                        <a href="生鲜水果.html">梨</a>
+                        <a href="生鲜水果.html">苹果</a>
+                        <a href="生鲜水果.html">香蕉</a>
+                    </div>
+                </div>
+                <div class="sortProduct" xid="2">
+                        <div class="row">
+                                <a href="新鲜蔬菜.html" style="color:blue">竹笋</a>
+                                <a href="新鲜蔬菜.html">花菜</a>
+                                <a href="新鲜蔬菜.html">豆荚</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">腌菜</a>
+                                <a href="新鲜蔬菜.html">脱水菜</a>
+                                <a href="新鲜蔬菜.html">姜</a>
+                                <a href="新鲜蔬菜.html">葱</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">大白菜</a>
+                                <a href="新鲜蔬菜.html">平菇</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html" style="color:blue">草菇</a>
+                                <a href="新鲜蔬菜.html">金针菇</a>
+                                <a href="新鲜蔬菜.html">木耳</a>
+                                <a href="新鲜蔬菜.html">其它</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">甘薯/地瓜</a>
+                                <a href="新鲜蔬菜.html">土豆</a>
+                                <a href="新鲜蔬菜.html">韭菜</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">香菜</a>
+                                <a href="新鲜蔬菜.html">菜苔</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html">油麦菜</a>
+                                <a href="新鲜蔬菜.html">韭黄</a>
+                                <a href="新鲜蔬菜.html">莴笋</a>
+                                <a href="新鲜蔬菜.html">芹菜</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">花椰菜</a>
+                                <a href="新鲜蔬菜.html">黄花菜</a>
+                                <a href="新鲜蔬菜.html">西兰花</a>
+                                <a href="新鲜蔬菜.html">萝卜</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html" style="color:blue">胡萝卜</a>
+                                <a href="新鲜蔬菜.html">南瓜</a>
+                                <a href="新鲜蔬菜.html">苦瓜</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">丝瓜</a>
+                                <a href="新鲜蔬菜.html">芋头</a>
+                                <a href="新鲜蔬菜.html">淮山</a>
+                                <a href="新鲜蔬菜.html">魔芋</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html" style="color:blue">香菇</a>
+                                <a href="新鲜蔬菜.html">黑木耳</a>
+                                <a href="新鲜蔬菜.html">茶树菇</a>
+                                <a href="新鲜蔬菜.html">竹荪</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">蘑菇</a>
+                                <a href="新鲜蔬菜.html">小葱</a>
+                                <a href="新鲜蔬菜.html">洋葱</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html">蒜苗</a>
+                                <a href="新鲜蔬菜.html">春笋</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">樱桃番茄（圣女果）</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">西葫芦</a>
+                                <a href="新鲜蔬菜.html">猴头菇</a>
+                                <a href="新鲜蔬菜.html">牛肝菌</a>
+                                <a href="新鲜蔬菜.html">芦笋</a>
+                                <a href="新鲜蔬菜.html">卷心菜</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html" style="color:blue">白木耳</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">海苔</a>
+                                <a href="新鲜蔬菜.html">油菜</a>
+                                <a href="新鲜蔬菜.html">黑番茄</a>
+                                <a href="新鲜蔬菜.html">地皮菜</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">彩椒</a>
+                                <a href="新鲜蔬菜.html">甘蓝</a>
+                                <a href="新鲜蔬菜.html">豌豆</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="新鲜蔬菜.html" style="color:blue">鲜蚕豆</a>
+                                <a href="新鲜蔬菜.html">扁豆</a>
+                                <a href="新鲜蔬菜.html">红豆</a>
+                                <a href="新鲜蔬菜.html">刀豆</a>
+                                <a href="新鲜蔬菜.html" style="color:blue">海带</a>
+                                <a href="新鲜蔬菜.html">猪毛菜</a>   
+                            </div>
+                </div>
+                <div class="sortProduct" xid="3">
+                        <div class="row">
+                                <a href="畜牧水产.html" style="color:black;"><b>畜禽类</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html" style="color:blue">羊</a>
+                                <a href="畜牧水产.html">兔</a>
+                                <a href="畜牧水产.html">鸭</a>
+                                <a href="畜牧水产.html">鸡</a>
+                                <a href="畜牧水产.html" style="color:blue">鹅</a>
+                                <a href="畜牧水产.html">雁</a>
+                                <a href="畜牧水产.html">山鸡</a>
+                                <a href="畜牧水产.html">猪</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html" style="color:blue">牛</a>
+                                <a href="畜牧水产.html">狗</a>
+                                <a href="畜牧水产.html">鸽子</a>
+                                <a href="畜牧水产.html">马</a>
+                                <a href="畜牧水产.html" style="color:blue">驴</a>
+                                <a href="畜牧水产.html">骡</a>
+                                <a href="畜牧水产.html">火鸡</a>
+                                <a href="畜牧水产.html">乌骨鸡</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html" style="color:blue">贵妃鸡</a>
+                                <a href="畜牧水产.html">野猪</a>
+                                <a href="畜牧水产.html">香猪</a>
+                                <a href="畜牧水产.html">豪猪</a>
+                                <a href="畜牧水产.html">珍珠鸡</a>
+                                <a href="畜牧水产.html">鸵鸟</a>
+                                <a href="畜牧水产.html">鹌鹑</a>
+                                <a href="畜牧水产.html">骆驼</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html" style="color:black"><b>水产类</b></a>
+                        
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html">鱼</a>
+                                <a href="畜牧水产.html">螃蟹</a>
+                                <a href="畜牧水产.html" style="color:blue;">鲈鱼</a>
+                                <a href="畜牧水产.html">鲤鱼</a>
+                                <a href="畜牧水产.html">泥鳅</a>
+                                <a href="畜牧水产.html">草鱼</a>
+                                <a href="畜牧水产.html">黄鳝</a>
+                                <a href="畜牧水产.html">青鱼</a>
+                                <a href="畜牧水产.html">鲫鱼</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html">鲇鱼</a>
+                                <a href="畜牧水产.html">对虾</a>
+                                <a href="畜牧水产.html">基围虾</a>
+                                <a href="畜牧水产.html">米虾</a>
+                                <a href="畜牧水产.html">鲍鱼</a>
+                                <a href="畜牧水产.html">田螺</a>
+                                <a href="畜牧水产.html">墨鱼</a>
+                                <a href="畜牧水产.html">鱿鱼</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="畜牧水产.html">紫菜</a>
+                                <a href="畜牧水产.html">干海带</a>
+                                <a href="畜牧水产.html">银鱼</a>
+                                <a href="畜牧水产.html">红腹水虎鱼</a>
+                                <a href="畜牧水产.html">泰国虎鱼</a>
+                                <a href="畜牧水产.html">接吻鱼</a>
+                                <a href="畜牧水产.html">清道夫鱼</a>
+                                <a href="畜牧水产.html">财神鱼</a>
+                                <a href="畜牧水产.html">中国斗鱼</a>
+                            </div>
+                </div>
+                <div class="sortProduct" xid="4">
+                        <div class="row">
+                                <a href="米面粮油.html" style="color:black"><b>主粮</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html">大米</a>
+                                <a href="米面粮油.html">麦类</a>
+                                <a href="米面粮油.html" style="color:blue">玉米</a>
+                                <a href="米面粮油.html">稻谷</a>
+                                <a href="米面粮油.html">面粉</a>
+                                <a href="米面粮油.html" style="color:blue">米粉</a>
+                                <a href="米面粮油.html">粉丝</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html">其它粮食</a>
+                                <a href="米面粮油.html" style="color:blue">挂面</a>
+                                <a href="米面粮油.html">小米</a>
+                                <a href="米面粮油.html">黄米面</a>
+                                <a href="米面粮油.html" style="color:blue">淀粉</a>
+                                <a href="米面粮油.html">粉条</a>
+                                <a href="米面粮油.html">莜面</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html" style="color:black"><b>食用油</b></a>
+                        
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html">大豆油</a>
+                                <a href="米面粮油.html" style="color:blue">山茶油</a>
+                                <a href="米面粮油.html">花生油</a>
+                                <a href="米面粮油.html">橄榄油</a>
+                                <a href="米面粮油.html" style="color:blue">玉米油</a>
+                                <a href="米面粮油.html">菜籽油</a>
+                                <a href="米面粮油.html">葵花籽油</a>
+                                <a href="米面粮油.html">色拉油</a>
+                                <a href="米面粮油.html">芝麻油</a>
+                                <a href="米面粮油.html">胡麻油</a>
+                                
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html" style="color:black"><b>杂粮</b></a>
+                             
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html" style="color:blue">红豆</a>
+                                <a href="米面粮油.html">大豆</a>
+                                <a href="米面粮油.html">绿豆</a>
+                                <a href="米面粮油.html" style="color:blue;">赤小豆</a>
+                                <a href="米面粮油.html">大麦</a>
+                                <a href="米面粮油.html">小麦</a>
+                                <a href="米面粮油.html">燕麦</a>
+                                <a href="米面粮油.html">芸豆</a>
+                                <a href="米面粮油.html">粳稻</a>
+                                <a href="米面粮油.html">籼稻</a>
+                                <a href="米面粮油.html">藜麦</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="米面粮油.html">荞麦</a>
+                                <a href="米面粮油.html" style="color:blue">青稞</a>
+                                <a href="米面粮油.html">高粱</a>
+                                <a href="米面粮油.html" style="color:blue">红米</a>
+                                <a href="米面粮油.html">茶籽</a>
+                                <a href="米面粮油.html">棉花棉籽</a>
+                                <a href="米面粮油.html">蓖麻</a>
+                                <a href="米面粮油.html">亚麻籽</a>
+                                <a href="米面粮油.html">谷子</a>
+                                <a href="米面粮油.html">花生</a>
+                                <a href="米面粮油.html">芝麻</a>
+                                <a href="米面粮油.html">葵花籽</a>
+                            </div>
+                </div>
+                <div class="sortProduct" xid="5">
+                        <div class="row">
+                        <a href="农副产品.html" style="color:black;"><b>茶叶酒饮</b></a>
+                        
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html">绿茶</a>
+                        <a href="农副产品.html" style="color:orange;">红茶</a>
+                        <a href="农副产品.html">花茶</a>
+                        <a href="农副产品.html">保健茶</a>
+                        <a href="农副产品.html" style="color:orange;">普洱茶</a>
+                        <a href="农副产品.html">黄茶</a>
+                        <a href="农副产品.html">白茶</a>
+                        <a href="农副产品.html">乌龙茶</a>
+                        <a href="农副产品.html">黑茶</a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html" style="color:orange">其它</a>
+                        <a href="农副产品.html" style="color:orange;">毛尖</a>
+                        <a href="农副产品.html">纹股蓝</a>
+                        <a href="农副产品.html">酒花茶</a>
+                        <a href="农副产品.html">葡萄酒</a>
+                        <a href="农副产品.html">白酒</a>
+                        <a href="农副产品.html">保健酒</a>
+                        <a href="农副产品.html" style="color:orange;">苦丁茶</a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html">铁观音</a>
+                        <a href="农副产品.html">金花茶</a>
+                        <a href="农副产品.html">龙井茶</a>
+                        <a href="农副产品.html" style="color:orange;">碧螺春</a>
+                        <a href="农副产品.html">茉莉花茶</a>
+                        <a href="农副产品.html" style="color:orange;">六安瓜片</a>
+                        <a href="农副产品.html">玫瑰花茶</a>
+                        <a href="农副产品.html" style="color:orange;">红酒</a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html" style="color:black;"><b>土特产</b></a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html" style="color:orange;">大枣</a>
+                        <a href="农副产品.html">土特产其它</a>
+                        <a href="农副产品.html">干香菇</a>
+                        <a href="农副产品.html">干菌子</a>
+                        <a href="农副产品.html">百合干</a>
+                        <a href="农副产品.html">脱水蔬菜</a>
+                        <a href="农副产品.html">干笋</a>
+                        <a href="农副产品.html" style="color:orange;">枸杞干</a>
+                        <a href="农副产品.html">葡萄干</a>
+                        <a href="农副产品.html" style="color:orange;">蜂蜜</a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html" style="color:black"><b>调味品</b></a>
+                        </div>
+                        <div class="separtor"></div>
+                        <div class="row">
+                        <a href="农副产品.html">盐</a>
+                        <a href="农副产品.html">鸡精</a>
+                        <a href="农副产品.html" style="color:orange;">糖</a>
+                        <a href="农副产品.html">酱油</a>
+                        <a href="农副产品.html">芝麻油</a>
+                        <a href="农副产品.html" style="color:orange;">耗油</a>
+                        <a href="农副产品.html">干辣椒</a>
+                        <a href="农副产品.html">辣椒粉</a>
+                        <a href="农副产品.html">孜然粉</a>
+                        <a href="农副产品.html">干花椒</a>
+                        </div>
+                </div>
+                <div class="sortProduct" xid="6">
+                        <div class="row">
+                                <a href="农资产品.html" style="color:black"><b>种子</b></a>
+                             
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农资产品.html">大田种子</a>
+                                <a href="农资产品.html" style="color:yellowgreen">蔬菜种子</a>
+                                <a href="农资产品.html">草类种子</a>
+                                <a href="农资产品.html">水果种子</a>
+                                <a href="农资产品.html" style="color:yellowgreen">油料种子</a>
+                                <a href="农资产品.html">药材种子</a>
+                                <a href="农资产品.html" style="color:yellowgreen">其它种子</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农资产品.html" style="color:black"><b>饲料</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农资产品.html" style="color:yellowgreen">鸡饲料</a>
+                                <a href="农资产品.html">猪饲料</a>
+                                <a href="农资产品.html">牛羊饲料</a>
+                                <a href="农资产品.html" style="color:yellowgreen">马料</a>
+                                <a href="农资产品.html">鱼饲料</a>
+                                <a href="农资产品.html">其他饲料</a>
+                               
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农资产品.html" style="color:black"><b>化肥</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农资产品.html">进口化肥</a>
+                                <a href="农资产品.html" style="color:yellowgreen">氮磷钾</a>
+                                <a href="农资产品.html">复合肥</a>
+                                <a href="农资产品.html">有机肥</a>
+                                <a href="农资产品.html">微量元素</a>
+                                <a href="农资产品.html" style="color:yellowgreen">叶面肥</a>
+                                <a href="农资产品.html">微生物肥料</a>
+                                <a href="农资产品.html" style="color:yellowgreen">其他化肥</a>
+                            </div>         
+                </div>
+               
+                <div class="sortProduct" xid="7">
+                        <div class="row">
+                                <a href="花卉苗木.html" style="color:black"><b>绿化类苗木</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html">竹类</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">草坪</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">白皮松</a>
+                                <a href="花卉苗木.html">小叶黄杨</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">花卉</a>
+                                <a href="花卉苗木.html">红豆杉</a>
+                                <a href="花卉苗木.html">罗汉松</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html">红叶石楠</a>
+                                <a href="花卉苗木.html">雪松苗</a>
+                                <a href="花卉苗木.html">榕树</a>
+                                <a href="花卉苗木.html">樟子松</a>
+                                <a href="花卉苗木.html">云杉</a>
+                                <a href="花卉苗木.html">广玉兰</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">铁树（苏铁）</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">老人葵</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html" style="color:black;"><b>果树类苗木</b></a>
+                                <a href="花卉苗木.html">饲料桑</a>
+                                <a href="花卉苗木.html">梅树苗</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">草莓苗</a>
+                                <a href="花卉苗木.html">山楂树</a>
+                                <a href="花卉苗木.html">树莓苗</a>
+                                <a href="花卉苗木.html">柿子树</a>
+                                <a href="花卉苗木.html">猕猴桃苗</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html" style="color:black"><b>观叶类花卉</b></a>
+                               
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html">绿萝</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">芦荟</a>
+                                <a href="花卉苗木.html">君子兰</a>
+                                <a href="花卉苗木.html">水仙</a>
+                                <a href="花卉苗木.html">橡皮树</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">四照花</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">虎舌红</a>
+                                <a href="花卉苗木.html">木百合</a>
+                                <a href="花卉苗木.html">百岁兰</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html" style="color:black"><b>观果类花卉</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="花卉苗木.html" style="color:blueviolet">菠萝蜜果</a>
+                                <a href="花卉苗木.html">盆栽草莓</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">石榴树</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">盆栽麦冬</a>
+                                <a href="花卉苗木.html">枇杷果</a>
+                                <a href="花卉苗木.html">苹果树</a>
+                                <a href="花卉苗木.html">神秘果树</a>
+                                <a href="花卉苗木.html">红槟榔</a>
+                                <a href="花卉苗木.html" style="color:blueviolet">水葫芦</a>
+                            </div>
+                     
+                         
+                </div>
+                <div class="sortProduct" xid="8">
+                        <div class="row">
+                                <a href="中草药材.html" style="color:black"><b>根茎类</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html">人参</a>
+                                <a href="中草药材.html">附子</a>
+                                <a href="中草药材.html" style="color:green">百合</a>
+                                <a href="中草药材.html" style="color:green">白术</a>
+                                <a href="中草药材.html">三七</a>
+                                <a href="中草药材.html">枸骨</a>
+                                <a href="中草药材.html" style="color:green">天麻</a>
+                                <a href="中草药材.html">独活</a>
+                                <a href="中草药材.html">西洋参</a>
+                                <a href="中草药材.html" style="color:green">人参</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html" style="color:black"><b>全草类</b></a>
+                            
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html">薄荷</a>
+                                <a href="中草药材.html">血党</a>
+                                <a href="中草药材.html" style="color:green">当药</a>
+                                <a href="中草药材.html">蛇床子</a>
+                                <a href="中草药材.html">月见草</a>
+                                <a href="中草药材.html" style="color:green">血党</a>
+                                <a href="中草药材.html">瓦松</a>
+                                <a href="中草药材.html">穿心莲</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html" style="color:black"><b>花类</b></a>
+                            
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html">红花</a>
+                                <a href="中草药材.html">蒲黄</a>
+                                <a href="中草药材.html">竹花</a>
+                                <a href="中草药材.html" style="color:green">黄花到睡莲</a>
+                                <a href="中草药材.html">莲须</a>
+                                <a href="中草药材.html" style="color:green">金银花</a>
+                                <a href="中草药材.html">菊花</a>
+                                <a href="中草药材.html" style="color:green">蜀葵</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html" style="color:black"><b>叶类</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="中草药材.html">艾叶</a>
+                                <a href="中草药材.html" style="color:green">荷叶</a>
+                                <a href="中草药材.html">桑叶</a>
+                                <a href="中草药材.html">石韦</a>
+                                <a href="中草药材.html" style="color:green">莴苣</a>
+                                <a href="中草药材.html">香叶</a>
+                                <a href="中草药材.html" style="color:green">甜茶</a>
+                                <a href="中草药材.html">景天三七</a>
+                            </div>
+                </div>
+                <div class="sortProduct" xid="9">
+                        <div class="row">
+                                <a href="地方特产.html" style="color:black"><b>河北特产</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:orange">迁西京东板栗</a>
+                                <a href="地方特产.html">黑沿子毛蛤</a>
+                                <a href="地方特产.html" style="color:orange">涉县核桃</a>
+                                <a href="地方特产.html">衡水老白干</a>
+                                <a href="地方特产.html">深州蜜桃</a>
+                                <a href="地方特产.html" style="color:orange">漫河西瓜</a>
+                               
+                             
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:black"><b>陕西特产</b></a>
+                             
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:orange">汉中附子</a>
+                                <a href="地方特产.html">平利女娲茶</a>
+                                <a href="地方特产.html">流曲琼锅糖</a>
+                                <a href="地方特产.html" style="color:orange">临潼石榴</a>
+                                <a href="地方特产.html">临潼火晶柿子</a>
+                                <a href="地方特产.html">府谷黄米</a>
+                                <a href="地方特产.html">定边羊肉</a>
+                              
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:black"><b>天津特产</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:orange">天津紫蟹</a>
+                               
+                                <a href="地方特产.html">汉沽东方对虾</a>
+                                <a href="地方特产.html" style="color:orange">天津猕猴桃</a>
+                                <a href="地方特产.html" style="color:orange">蓟县玉米渣</a>
+                                <a href="地方特产.html">狗不理包子</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:black;"><b>北京特产</b></a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="地方特产.html" style="color:orange">老北京灌肠</a>
+                                <a href="地方特产.html">王致和臭豆腐</a>
+                                <a href="地方特产.html">冰糖葫芦</a>
+                                <a href="地方特产.html">房山核桃宴</a>
+                                <a href="地方特产.html" style="color:orange">燕山板栗</a>
+                                <a href="地方特产.html">怀柔红鳟鱼</a>
+                                <a href="地方特产.html">早凤王桃</a>
+                                <a href="地方特产.html" style="color:orange">门头沟纸皮核桃</a>
+                            </div>
+                </div>
+                <div class="sortProduct" xid="10">
+                        <div class="row">
+                                <a href="农业机械.html">耕耘机械</a>
+                                <a href="农业机械.html">整地机械</a>
+                                <a href="农业机械.html" style="color:black">种植机械</a>
+                                <a href="农业机械.html" style="color:black">施肥机械</a>
+                                <a href="农业机械.html">田间管理机械</a>
+                                <a href="农业机械.html" style="color:black">植保机械</a>
+                                <a href="农业机械.html">收获机械</a>
+                                <a href="农业机械.html">脱粒机械</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农业机械.html" style="color:black">清洗机械</a>
+                                <a href="农业机械.html" style="color:black">烘干机械</a>
+                                <a href="农业机械.html">贮存机械</a>
+                                <a href="农业机械.html">饲料加工</a>
+                                <a href="农业机械.html">粮油加工</a>
+                                <a href="农业机械.html">农副加工</a>
+                                <a href="农业机械.html">卸装机械</a>
+                                <a href="农业机械.html">运输机械</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农业机械.html" style="color:black">灌溉机械</a>
+                                <a href="农业机械.html">播种机械</a>
+                                <a href="农业机械.html" style="color:black">农机配件</a>
+                                <a href="农业机械.html">其他农机</a>
+                                <a href="农业机械.html" style="color:black">养殖机械</a>
+                                <a href="农业机械.html">进口机械</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农业机械.html">蓄力机械</a>
+                                <a href="农业机械.html">极力机械</a>
+                                <a href="农业机械.html">平原旱作机械</a>
+                                <a href="农业机械.html" style="color:black">水田机械</a>
+                                <a href="农业机械.html">山地机械</a>
+                                <a href="农业机械.html">垄作机械</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农业机械.html">食品加工机械</a>
+                                <a href="农业机械.html" style="color:black">检测机械</a>
+                                <a href="农业机械.html">新品特惠</a>
+                                <a href="农业机械.html">三星屏幕</a>
+                                <a href="农业机械.html">客厅爆款</a>
+                                <a href="农业机械.html">智能网络</a>
+                                <a href="农业机械.html">32寸电视机</a>
+                                <a href="农业机械.html">智能网络</a>
+                            </div>
+                            <div class="separtor"></div>
+                            <div class="row">
+                                <a href="农业机械.html" style="color:black">采样机械</a>
+                                <a href="农业机械.html">覆膜机械</a>
+                                <a href="农业机械.html">风力机械</a>
+                                <a href="农业机械.html">畜牧机械</a>
+                                <a href="农业机械.html">园林机械</a>
+                                <a href="农业机械.html">32寸电视机</a>
+                                <a href="农业机械.html" style="color:black">智能网络</a>
+                            </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="mobie-bottom">
+<a href="index.html"><i class="glyphicon glyphicon-home"></i>首页</a>
+<a href="sort.html" class="mobie-selected"><i class="glyphicon glyphicon-th-list"></i>分类</a>
+<a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>购物车</a>
+<a href="person.html"><i class="glyphicon glyphicon-user"></i>我的</a>
+</div>
+</body>
+</html>

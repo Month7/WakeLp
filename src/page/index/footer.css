@@ -1,39 +1,88 @@
-.footer{
+/*=========================================页脚==================================================*/
+.footer_mobie{
     display: none;
 }
-.footer_mobie{
-    display: block;
-    height: 5em;
-    width: 100%;
-    text-align: center;
-    line-height: 5em;
-    color: #fff;
-    background-color: rgb(47, 47, 47);
-    margin-bottom: 1rem;
-}
 .mobie-bottom{
-    display: block;
-    height: 1rem;
-    background: #fff;
-    position: fixed;
-    bottom: 0;
-    left:0;
+    display: none;
+}
+.footer{
     width: 100%;
-    z-index: 99;
+    height: 90px;
+    background-color: rgb(47, 47, 47);
+    padding-top:20px;
 }
-.mobie-bottom a{
-    display: block;
-    float: left;
-    width: 25%;
-    height: 100%;
-    text-align: center;
-    color: black;
+.footer_child{
+    height: 60px;
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(47, 47, 47);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
-.mobie-bottom i{
-    margin-top:0.1rem;
-    display: block;
-    font-size: 0.45rem;
+.footer_child_right{
+    width: 440px;
+    height: 60px;
+    float: right;
 }
-.mobie-selected{
-    background: orange;
+.footer_child_right p{
+    margin-left: 160px;
+    color: #939393;
+    margin-top: 5px;
+}
+.footer_child_right a{
+    text-decoration: none;
+    color:#939393;
+}
+.footer_child_right span{
+    color: #939393;
+}
+.footer_child_right a:link,
+.footer_child_right a:visited{
+    color: #939393;
+}
+.footer_child_right a:hover{
+    color: yellow;
+}
+/*移动端*/
+@media (max-width:768px){
+    .footer{
+        display: none;
+    }
+    .footer_mobie{
+        display: block;
+        height: 5em;
+        width: 100%;
+        text-align: center;
+        line-height: 5em;
+        color: #fff;
+        background-color: rgb(47, 47, 47);
+        margin-bottom: 1rem;
+    }
+    .mobie-bottom{
+        display: block;
+        height: 1rem;
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        z-index: 99;
+    }
+    .mobie-bottom a{
+        display: block;
+        float: left;
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        color: black;
+    }
+    .mobie-bottom i{
+        margin-top:0.1rem;
+        display: block;
+        font-size: 0.45rem;
+    }
+    .mobie-selected{
+        background: orange;
+    }
 }

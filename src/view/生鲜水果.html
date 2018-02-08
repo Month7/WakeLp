@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>生鲜水果</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--header-->
+    <%= require('html-loader!./head.html')%>
+    <!--内容-->
+    <div class="market-main">
+            <a href="发布.html"><button class="publish">我<br>要<br>发<br>布</button></a>
+            <div class="container container-special">
+                <div class="market-menu">
+                    <div class="tab-one">
+                        <div class="tab-nav">
+                            <span>分类：</span>
+                        </div> 
+                        <div class="tab-content">
+                            <a href="生鲜水果.html" title="生鲜水果" class="selected">生鲜水果</a>
+                            <a href="新鲜蔬菜.html">新鲜蔬菜</a>
+                            <a href="畜牧水产.html">畜牧水产</a>
+                            <a href="米面粮油.html">米面粮油</a>
+                            <a href="农副产品.html">农副产品</a>
+                            <a href="农资产品.html">农资产品</a>
+                            <a href="花卉苗木.html">花卉苗木</a>
+                            <a href="中草药材.html">中草药材</a>
+                            <a href="地方特产.html">地方特产</a>
+                            <a href="农业机械.html">农业机械</a>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+                    <div class="tab-drop">
+                        <div class="tab-content-drop">
+                            <a href="#">草莓</a>
+                            <a href="#">荔枝</a>
+                            <a href="#">苹果</a>
+                            <a href="#">香蕉</a>
+                            <a href="#">柑桔</a>
+                            <a href="#">橙</a>
+                            <a href="#">火龙果</a>
+                            <a href="#">柠檬</a>
+                            <a href="#">葡萄</a>
+                            <a href="#">大红果</a>
+                            <a href="#">瓜果</a>
+                            <a href="#">提子</a>
+                            <a href="#">其他水果</a>
+                            <a href="#">菠萝</a>
+                            <a href="#">柚子</a>
+                            <a href="#">猕猴桃</a>
+                            <a href="#">甜瓜</a>
+                            <a href="#">西瓜</a>
+                            <a href="#">哈密瓜</a>
+                            <a href="#">桃</a>
+                            <a href="#">桔</a>
+                            <a href="#">金桔</a>
+                            <a href="#">李</a>
+                            <a href="#">杏</a>
+                            <a href="#">圣女果</a>
+                            <a href="#">樱桃</a>
+                            <a href="#">车厘子</a>
+                            <a href="#">龙眼</a>
+                            <a href="#">甘蔗</a>
+                            <a href="#">山竹</a>
+                            <a href="#">杨桃</a>
+                            <a href="#">杨梅</a>
+                            <a href="#">无花果</a>
+                            <a href="#">黄金瓜</a>
+                            <a href="#">黄桃</a>
+                            <a href="#">毛桃</a>
+                            <a href="#">榴莲</a>
+                            <a href="#">柿子</a>
+                            <a href="#">人参果</a>
+                            <a href="#">山楂</a>
+                            <a href="#">橄榄</a>
+                            <a href="#">香瓜</a>
+                            <a href="#">椰子</a>
+                            <a href="#">蓝莓</a>
+                            <a href="#">槟榔</a>
+                            <a href="#">灯笼果</a>
+                            <a href="#">桑葚</a>
+                            <a href="#">乌梅</a>
+                            <a href="#">百香果</a>
+                            <a href="#">梅子</a>
+                            <a href="#">百香果</a>
+                            <a href="#">羊奶果</a>
+                            <a href="#">红枣</a>
+                            <a href="#">牛油果</a>
+                            <a href="#">神秘果</a>
+                            <a href="#">含羞果</a>
+                            <a href="#">树莓</a>
+                            <a href="#">金星果</a>
+                        </div>
+                        <div class="tab-one">
+                                <div class="tab-nav">
+                                    <span>地区：</span>
+                                </div> 
+                                <div class="tab-content">
+                                    <a href="#" class="selected">全国</a>
+                                    <a href="#" title="北京市">北京市</a>
+                                    <a href="#">上海市</a>
+                                    <a href="#">天津市</a>
+                                    <a href="#">重庆市</a>
+                                    <a href="#">河北省</a>
+                                    <a href="#">山西省</a>
+                                    <a href="#">内蒙古</a>
+                                    <a href="#">辽宁省</a>
+                                    <a href="#">吉林省</a>
+                                    <a href="#">黑龙江省</a>
+                                    <a href="#">河南省</a> 
+                                </div> 
+                            </div>
+                            <div class="tab-drop">
+                                    <div class="tab-content-drop-special">
+                                    <a href="#">湖北省</a>
+                                    <a href="#">湖南省</a>
+                                    <a href="#">广东省</a>
+                                    <a href="#">广西</a>
+                                    <a href="#">海南省</a>
+                                    <a href="#">四川省</a>
+                                    </div>
+                            </div>        
+                    </div>               
+                </div>
+                <div style="clear:both;"></div>
+                <div>
+                    <img src="../images/水果蔬菜.png">
+                </div>
+                <div id="row1">
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/1-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>大量批发优质脐橙</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥2.00/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/1-2.jpg"></a>
+                                <div class="market-title">
+                                        <p>大量批发优质脐橙</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>￥2.00/斤</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/1-3.jpg"></a>
+                                <div class="market-title">
+                                        <p>赣南脐橙。</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>￥5.80/斤</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/1-4.jpg"></a>
+                                <div class="market-title">
+                                        <p> 秭归九月红脐橙产地直销</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>￥2.40/斤</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div id="row2">
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="火龙果.html"><img src="images/loading.gif" data-src="../生鲜水果/2-1.jpg"></a>
+                                <div class="market-title">
+                                        <p> 新宁精品脐橙金玉果品</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>￥1.80/斤</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                   
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="火龙果.html"><img src="images/loading.gif" data-src="../生鲜水果/2-2.jpg"></a>
+                                <div class="market-title">
+                                        <p> 当季火龙果</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>￥4.00/斤</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="火龙果.html"><img src="images/loading.gif" data-src="../生鲜水果/2-3.jpg"></a>
+                                <div class="market-title">
+                                        <p> 大量出售鲜桃子</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>面议</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 market-each">
+                                <a href="火龙果.html"><img src="images/loading.gif" data-src="../生鲜水果/2-4.jpg"></a>
+                                <div class="market-title">
+                                        <p> 惠州红心火龙果</p>
+                                    <div class="market-text">
+                                        <div class="market-price">
+                                            <p>6.80/斤</p>
+                                        </div>
+                                        <div class="market-cart">
+                                            <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="row3">
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="胡萝卜-1.html"><img src="images/loading.gif" data-src="../生鲜水果/3-1.jpg"></a>
+                            <div class="market-title">
+                                    <p> 胡萝卜提取物</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>89.00/kg</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="胡萝卜-1.html"><img src="images/loading.gif" data-src="../生鲜水果/3-2.jpg"></a>
+                            <div class="market-title">
+                                    <p> 红萝卜 胡萝卜</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="胡萝卜-1.html"><img src="images/loading.gif" data-src="../生鲜水果/3-3.jpg"></a>
+                            <div class="market-title">
+                                    <p> 胡萝卜粉提取物</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>61.00/25公斤纸饭桶</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="胡萝卜-1.html"><img src="images/loading.gif" data-src="../生鲜水果/3-4.jpg"></a>
+                            <div class="market-title">
+                                    <p> 出售大量新鲜无公害胡萝卜</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="row4">
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/4-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>山东黄金梨批发价格</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥0.60/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/4-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>山东黄金梨批发</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥0.60/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/4-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>山东丰水梨批发</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/4-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>山西运城酥梨</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <div style="clear:both;"></div>
+                </div>
+                <div id="row5">
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/5-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>河北涿鹿富娇大量葡萄</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥10.00/kg</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/5-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>早熟新品种早霞玫瑰葡萄</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/5-3.jpg"></a>
+                            <div class="market-title">
+                                    <p>山东优质巨峰葡萄</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥1.50/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/5-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>自家优质小黑粒葡萄</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>￥1.00/斤</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div id="row6">
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/6-1.jpg"></a>
+                            <div class="market-title">
+                                    <p>哈密瓜</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/6-2.jpg"></a>
+                            <div class="market-title">
+                                    <p>内蒙古河套地区优质蜜瓜</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/6-3.png"></a>
+                            <div class="market-title">
+                                    <p>陕西大棚哈密瓜</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>面议</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 market-each">
+                            <a href="购买页.html"><img src="images/loading.gif" data-src="../生鲜水果/6-4.jpg"></a>
+                            <div class="market-title">
+                                    <p>陕西大荔哈密瓜</p>
+                                <div class="market-text">
+                                    <div class="market-price">
+                                        <p>4.00/千克</p>
+                                    </div>
+                                    <div class="market-cart">
+                                        <a href="购买页.html"><span class="glyphicon glyphicon-shopping-cart redColor"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div style="clear:both"></div>
+                </div>
+                </div>
+                </div>
+                   <!--右侧导航-->
+        <div class="right-banner container" style="padding:0">
+                <div class="right-banner-content">
+                    <div class="user">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="rb-cart">
+                        <a href="cart.html" target="_blank" style="color:white;"><span class="glyphicon glyphicon-shopping-cart">购物车</span></a>
+                    </div>
+                    <div class="rs-money">
+                        <span class="glyphicon glyphicon-usd"></span>
+                    </div>
+                    <div class="rs-like">
+                        <span class="glyphicon glyphicon-heart-empty"></span>
+                    </div>
+                    <div class="rs-er">
+                        <span class="glyphicon glyphicon-qrcode"></span>
+                    </div>
+                </div>
+            </div>
+        <div class="rbl container" style="padding:0">
+                <div class="rbl-content">
+                    <div class="rbl-hurt">
+                        我要充值
+                    </div>
+                    <div class="rbl-love">
+                        我的收藏
+                    </div>
+                    <div class="rbl-user">
+                        <img src="images/no-img_mid_.jpg " />
+                        <span>欢迎来到绿速康</span>
+                        <span>请登录</span>
+                        <hr>
+                        <div class="OL">
+                            <div class="myOrder"><a href="#">我的订单</a></div>
+                            <div class="myLike"><a href="#">我的收藏</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--页脚-->
+    <%= require('html-loader!./mobieSlide.html')%>
+    <%= require('html-loader!./footer.html')%>
+</body>
+</html>

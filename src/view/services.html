@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>欢迎来到WakeLp</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--header-->
+    <%= require('html-loader!./head.html')%>
+    <!--内容-->
+    <div class="container">
+        <div class="services">				
+            <div class="service-grid">
+            <h3>我的绿速康</h3>
+                <div class="col-md-4 grid-service">
+                    <a href="single.html"><img class="img-responsive" src="images/se1.jpg" alt=" " ></a>
+                    <h4><a href="single.html">更快 </a></h4>
+                    <p>我们提供最优质的物流服务，集中配送、 方便快捷。</p>
+                    
+                </div>
+                <div class="col-md-4 grid-service">
+                    <a href="single.html"><img class="img-responsive" src="images/se.jpg" alt=" " ></a>
+                    <h4><a href="single.html">更新鲜 </a></h4>
+                    <p>我们拥有最好的冷库系统，同城服务，减少中间环节，为您提供最新鲜的食品。 </p>
+                    
+                </div>
+                <div class="col-md-4 grid-service">
+                    <a href="single.html"><img class="img-responsive" src="images/se2.jpg" alt=" " ></a>
+                    <h4><a href="single.html">更优质 </a></h4>
+                    <p>我们对农产品来源进行详细的检测与质量控制，保证您的食物更优质。 </p>
+                    
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="service-bottom">
+                <div class="col-md-8 service-top">
+                    <h3>客服咨询</h3>
+                    <div class=" service-top-bottom">
+                        <div class="col-md-6 ser-in">
+                            <i class="social"> </i>
+                            <div class="service-on">
+                                <h4><a href="single.html">在线客服 </a></h4>
+                                <p> </p>
+                                
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="col-md-6 ser-in">
+                            <i class="social social-in"> </i>
+                            <div class="service-on">
+                                <h4><a href="single.html">帮助中心 </a></h4>
+                                <p> </p>
+                                
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="service-top-bottom">
+                        <div class="col-md-6 ser-in">
+                            <i class="social social-on"> </i>
+                            <div class="service-on">
+                                <h4><a href="single.html">售后服务 </a></h4>
+                                <p> </p>
+                            
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="col-md-6 ser-in">
+                            <i class="social social-at"> </i>
+                            <div class="service-on">
+                                <h4><a href="single.html">意见建议 </a></h4>
+                                <p> </p>
+                                
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service-top">
+                    <h3>农业快讯</h3>
+                <ul>
+                    <li><a href="#"><span> </span>高粱熟了红满天--40000亩粘高粱订单农业纪实</a></li>
+                    <li><a href="#"><span> </span>减排直逼养殖业 以色列“人造肉”要来了？</a></li>
+                    <li><a href="#"><span> </span>石斑鱼技术外流大陆 大陆杂交出“龙虎斑”</a></li>
+                    <li><a href="#"><span> </span>袋鼠数量剧增，澳洲生态专家建议多食袋鼠</a></li>
+                    <li><a href="#"><span> </span>一个渔民20多年来救起了58名落水者</a></li>
+                    <li><a href="#"><span> </span>支教农村的年轻大学生们，教师节快乐！</a></li>							
+                </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <!--页脚-->
+    <%= require('html-loader!./footer.html')%>
+    <script src="../../dist/index.js"></script>
+</body>
+</html>

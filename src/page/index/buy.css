@@ -1,0 +1,262 @@
+.mobie-buy{
+    display: none;
+}
+.buy-indc{
+    background-color:#F8F8F8;
+    padding-bottom:20px;
+}
+.buy-text-bg{
+    background-color:#ECECEC;
+    height:20px;
+    margin-top:10px;
+}
+.buy-body{
+    width: 900px;
+    margin: 10px auto;
+    /* background-color: #F8F8F8; */
+}
+.buy-picture{
+    margin: 20px 0 20px 0;
+    width: 45%;
+    float: left;
+    background-color: #F8F8F8;
+}
+.picture-small{
+    margin-top:5px;
+    /* border: 1px solid #ECECEC; */
+    background-color: #F8F8F8;
+}
+.picture-big img{
+    width: 360px;
+    height: 256px;
+}
+.picture-small img{
+    width: 95px;
+    height: 66px;
+    border: 2px solid #ECECEC;
+}
+.picture-small img:hover{
+    border: 2px solid red;
+}
+.buy-text{
+    float: left;
+    width: 45%;
+    margin: 20px 10px 10px 10px;
+}
+.buy-text-title{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.leftText{
+    color: #999999;
+    font-size: 14px;
+}
+.rightText{
+    color: #FE0055;
+    font-size: 14px;
+}
+.textDiv{
+    margin-top:10px;
+}
+
+
+.btn2 {
+	background: none;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	border-radius:0px !important;
+	text-decoration:none;
+	color:#000;
+	font-size: 1.0em;
+	border: 2px solid #ff9900;
+	padding: 0.4em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+.btn2-1c:after {
+    content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    background-color: #ff9900!important;
+}
+.btn2-1c:hover,
+.btn2-1c:active {
+    color: white !important;
+    text-decoration: none;
+}
+.btn2-1c:hover:after,
+.btn2-1c:active:after {
+	width: 100%;
+}
+
+
+.buttonDiv{
+    margin-top:20px;
+} 
+.buttonDiv a{
+    margin-left: 30px;
+}
+.indroduction{
+    padding: 40px 20px 40px 20px;
+    background-color: white;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.picutre-big img{
+    height: 270px;
+    width: 350px;
+}
+/*=============================放大镜效果===========================*/
+.huaKuai{
+    width: 100px;
+    height: 100px;
+    display: none;
+    left:0;
+    top:0;
+    background-color:#454545;
+    opacity:0.5;
+    position:absolute;
+    cursor:move;
+}
+.normal{
+    position: relative;
+}
+.fangDa{
+    width:350px;
+    height:270px;
+    display:none;
+    position:absolute;
+    right:-300px;
+    top:0;
+    overflow:hidden;
+    background-color:#454545;
+    z-index: 100;
+}
+.fangDa img{
+    width: 0px;
+    height: 0px;
+    margin-left:0;
+    margin-top:0;
+}
+.fangDaImgs{
+    height: 100%;
+    width:100%;
+}
+.flyer-img{
+    width: 30px;
+    height: 30px;
+}
+/*移动端 */
+@media (max-width:768px){
+    .buy-body{
+        width: 100%;
+        margin: 0; 
+     }
+     .buy-footer{
+         display: block;
+         height: 1rem;
+         width: 100%;
+         background: #fff;
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         z-index: 99;
+         font-size: 0.4rem;
+     }
+     .buy-text{
+         width: 100%;
+         margin: 0;
+     }
+     .buy-picture{
+         display: none;
+     }
+     .buy-text-title{
+         font-size:0.3rem;
+         text-align: center;
+     }
+     .buttonDiv{
+         display: none;
+     }
+     .buy-footer a{
+         margin-top:0.2rem;
+         display: block;
+         width: 20%;
+         float: left;
+         height: 100%;
+         color: black;
+         font-size: 0.3rem;
+     }
+     .mobie-fb{
+         background: orange;
+         color: #fff!important;
+         width: 30%!important;
+         text-align: center;
+         border-right:  1px solid black;
+         line-height: 1rem;
+         margin: 0!important;
+     }
+     .buy-footer i{
+         font-size: 0.5rem;
+     }
+     .buy-text-bg{
+         display: none;
+     }
+     .indroduction{
+         padding: 0.2rem;
+     }
+     .buy-indc{
+         margin-bottom: 0.2rem;
+     }
+     .mobie-buy{
+         margin-top:1.3rem;
+         display: block;
+         z-index: 99;
+         width: 100%;
+         height: 6rem;
+     }
+     .mobie-buy img{
+         height: 100%;
+         width: 100%;
+         z-index: 99;
+     }
+     .carousel{
+         width: 100%;
+         margin: 0;
+         padding: 0;
+     }
+     #carouselId{
+         margin: 0!important;
+         padding: 0;
+         width: 100%;
+         height: 100%;
+     }
+     .carousel-inner{
+         margin: 0;
+         width: 100%;
+         height: 100%;
+         border: none;
+     }
+     .item{
+         width: 100%;
+         height: 100%;
+         border: none;
+         padding: 0;
+     }
+     .carousel-inner img{
+         width: 100%;
+         height: 100%;
+     }
+}
