@@ -2,7 +2,7 @@
  * @Author: yin
  * @Date: 2018-01-28 21:18:52 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-02-09 00:46:43
+ * @Last Modified time: 2018-02-09 17:16:51
  */
 const path = require('path');
 var webpack = require('webpack');
@@ -68,6 +68,10 @@ var config = {
     new HtmlWebpackPlugin(getHtmlConfig('米面粮油')),
     new HtmlWebpackPlugin(getHtmlConfig('花卉苗木')),
     new HtmlWebpackPlugin(getHtmlConfig('生鲜水果')),
+    new HtmlWebpackPlugin(getHtmlConfig('农业机械')),
+    new HtmlWebpackPlugin(getHtmlConfig('地方特产')),
+    new HtmlWebpackPlugin(getHtmlConfig('农资产品')),
+    new HtmlWebpackPlugin(getHtmlConfig('中草药材')),
     new HtmlWebpackPlugin(getHtmlConfig('register')),
     new HtmlWebpackPlugin(getHtmlConfig('购买页')),
     new HtmlWebpackPlugin(getHtmlConfig('促销')),

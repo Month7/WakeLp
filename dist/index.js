@@ -14,7 +14,7 @@ webpackJsonp([1],[
 	 * @Author: yin 
 	 * @Date: 2018-01-29 18:42:10 
 	 * @Last Modified by: mikey.zhaopeng
-	 * @Last Modified time: 2018-02-09 00:47:33
+	 * @Last Modified time: 2018-02-09 17:08:06
 	 */
 	'use strict';
 
@@ -35,15 +35,18 @@ webpackJsonp([1],[
 	__webpack_require__(27);
 	__webpack_require__(29);
 	__webpack_require__(31);
-	// require('./test.js');
 	__webpack_require__(36);
-	// require('../common/amazeui.css');
+	// require('./test.js');
 	__webpack_require__(38);
+	// require('../common/amazeui.css');
 	__webpack_require__(40);
 	__webpack_require__(42);
-	__webpack_require__(43);
+	__webpack_require__(44);
+	__webpack_require__(45);
+	__webpack_require__(46);
+	__webpack_require__(47);
 	//加载通用模块
-	var common=__webpack_require__(37);
+	var common=__webpack_require__(39);
 	// var Mock = require('mockjs')
 	// var data = Mock.mock({
 	//     // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
@@ -648,6 +651,13 @@ webpackJsonp([1],[
 /* 34 */,
 /* 35 */,
 /* 36 */
+/***/ (function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 37 */,
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -657,7 +667,7 @@ webpackJsonp([1],[
 	 * @Last Modified time: 2018-02-08 20:42:19
 	 * 懒加载功能
 	 */
-	var load=__webpack_require__(37);
+	var load=__webpack_require__(39);
 	$(function(){
 	    /*=====================================图片懒加载==================================================*/
 	    $(window).scroll(function(){
@@ -768,7 +778,7 @@ webpackJsonp([1],[
 	})
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports) {
 
 	/*
@@ -817,13 +827,6 @@ webpackJsonp([1],[
 	module.exports=_mm;
 
 /***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 39 */,
 /* 40 */
 /***/ (function(module, exports) {
 
@@ -832,6 +835,13 @@ webpackJsonp([1],[
 /***/ }),
 /* 41 */,
 /* 42 */
+/***/ (function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 43 */,
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -842,7 +852,7 @@ webpackJsonp([1],[
 	 */
 	'use strict';
 
-	var common=__webpack_require__(37);
+	var common=__webpack_require__(39);
 
 	var page={
 	    //初始化
@@ -895,7 +905,7 @@ webpackJsonp([1],[
 	})
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports) {
 
 	$(function(){
@@ -908,6 +918,46 @@ webpackJsonp([1],[
 	        $(".register-phone").animate({left:"0"},200);
 	        $(".register-email").animate({left:"-400px"},10);
 	    })
+	})
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports) {
+
+	/*! fly - v1.0.0 - 2015-03-23
+	* https://github.com/amibug/fly
+	* Copyright (c) 2015 wuyuedong; Licensed MIT */
+	!function(a){a.fly=function(b,c){var d={version:"1.0.0",autoPlay:!0,vertex_Rtop:20,speed:1.2,start:{},end:{},onEnd:a.noop},e=this,f=a(b);e.init=function(a){this.setOptions(a),!!this.settings.autoPlay&&this.play()},e.setOptions=function(b){this.settings=a.extend(!0,{},d,b);var c=this.settings,e=c.start,g=c.end;f.css({marginTop:"0px",marginLeft:"0px",position:"fixed"}).appendTo("body"),null!=g.width&&null!=g.height&&a.extend(!0,e,{width:f.width(),height:f.height()});var h=Math.min(e.top,g.top)-Math.abs(e.left-g.left)/3;h<c.vertex_Rtop&&(h=Math.min(c.vertex_Rtop,Math.min(e.top,g.top)));var i=Math.sqrt(Math.pow(e.top-g.top,2)+Math.pow(e.left-g.left,2)),j=Math.ceil(Math.min(Math.max(Math.log(i)/.05-75,30),100)/c.speed),k=e.top==h?0:-Math.sqrt((g.top-h)/(e.top-h)),l=(k*e.left-g.left)/(k-1),m=g.left==l?0:(g.top-h)/Math.pow(g.left-l,2);a.extend(!0,c,{count:-1,steps:j,vertex_left:l,vertex_top:h,curvature:m})},e.play=function(){this.move()},e.move=function(){var b=this.settings,c=b.start,d=b.count,e=b.steps,g=b.end,h=c.left+(g.left-c.left)*d/e,i=0==b.curvature?c.top+(g.top-c.top)*d/e:b.curvature*Math.pow(h-b.vertex_left,2)+b.vertex_top;if(null!=g.width&&null!=g.height){var j=e/2,k=g.width-(g.width-c.width)*Math.cos(j>d?0:(d-j)/(e-j)*Math.PI/2),l=g.height-(g.height-c.height)*Math.cos(j>d?0:(d-j)/(e-j)*Math.PI/2);f.css({width:k+"px",height:l+"px","font-size":Math.min(k,l)+"px"})}f.css({left:h+"px",top:i+"px"}),b.count++;var m=window.requestAnimationFrame(a.proxy(this.move,this));d==e&&(window.cancelAnimationFrame(m),b.onEnd.apply(this))},e.destroy=function(){f.remove()},e.init(c)},a.fn.fly=function(b){return this.each(function(){void 0==a(this).data("fly")&&a(this).data("fly",new a.fly(this,b))})}}(jQuery);
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports) {
+
+	
+	/*=============================================商品飞入购物车效果===============================*/
+	$("#addCart").click(function(){
+	    var imgSrc=$(".big").attr("src"); 
+	    if($(".normal").length>0){
+	        var $rbCart=$(".rb-cart");
+	        var endLeft=$rbCart.offset().left;
+	        var endTop=$rbCart.offset().top;
+	    }
+	    var flyer=$("<img class='flyer-img' src="+imgSrc+">");
+	    flyer.fly({   
+	        start: {   
+	            left: event.pageX,//抛物体起点横坐标   
+	            top: event.pageY //抛物体起点纵坐标   
+	        },   
+	        end: {   
+	            left: endLeft,//抛物体终点横坐标   
+	            top: endTop, //抛物体终点纵坐标   
+	        },   
+	        onEnd: function() {   
+	            // $("#tip").show().animate({width: '200px'},300).fadeOut(500);////成功加入购物车动画效果   
+	            // this.destory(); //销毁抛物体   
+	            $(this).remove();
+	        }   
+	    });   
 	})
 
 /***/ })

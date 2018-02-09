@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>关于我们</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <!--header-->
+    <%= require('html-loader!./head.html')%>
+    <!--内容-->
+    <div class="container">
+        <div class="about">
+            <div class="about-top">
+                <div class="col-md-8 top-about">
+                    <h5>关于我们</h5>
+                    <p>本公司是一家提供线上订购、线下配送的科技服务公司，整合农村散户、规模农场的农业产品，涉及粮蔬、林业、畜牧业、农副产品、渔业，并且进行质量检测及简单加工，将其放置于本公司的销售平台，并为农户提供销售平台，供餐饮企业、个体饭店、民户选购，于次日配送到客户，从整个服务过程中赚取服务费、加工费及产品差价。</p>
+                    <a href="single.html" class="btn  btn-1c">了解更多</a>
+                </div>
+                <div class="col-md-4 about-in">
+                <a href="single.html"><img class="img-responsive" src="../images/ab.jpg" alt=" " ></a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <!---->
+            <div class="grig-top">
+                <div class="col-md-4 grid-left-top">
+                    <h3><a href="single.html">产品源选择</a></h3>
+                    <span>时鲜类</span>
+                    <p>（1）在农产品生产地，通过安全卫生检测，选择产品质量优异的生产户，建立长期的合作关系，并给予一定的技术支持，以确保产品质量；<br>
+                            （2）与已成规模的无公害、有机蔬菜生产基地（已通过政府相关部门检测确认的基地）进行长期合作，将产品进行档次分类，丰富产品类型，提供多样化消费；<br>
+                            （3）在土地流转，高效、大规模生产的农业变化背景下，若条件允许将建立自有生产基地，科学种植，进一步提升产品质量与成本控制。
+                            </p>
+                    <a href="single.html" class="btn  btn-1c">了解更多</a>
+                </div>
+                <div class="col-md-8 grid-right-top">
+                    <!-- <h3><label>产品源选择</label> <a href="single.html">产品源选择</a></h3> -->
+                    <h3><label><a href="single.html"></a></label></h3>
+                    <span>非时鲜类</span>
+                    <p>通过卫生安全检测、认证，与生产基地、农产品相关加工企业进行合作，进行消费数据分析，提前购买放置相应冷库中，以便及时满足客户需求。</p>
+                    <a href="single.html" class="btn  btn-1c">了解更多</a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--页脚-->
+    <%= require('html-loader!./footer.html')%>
+    <script src="../../dist/index.js"></script>
+</body>
+</html>
