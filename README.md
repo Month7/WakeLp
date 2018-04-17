@@ -4,7 +4,7 @@ Orange电子商务平台 有PC和wap两个版本
 应用到的技术：webpack的使用，放大镜效果，jQuery页面滚动监视，商品飞进购物车，购物车交互，轮播图等</br>
 使用了懒加载，cdn分发等技术进行了前端的性能优化</br>
 一部分数据使用json进行模拟，使用ajax技术获取</br>
-在线预览:http://116.196.103.81/</br>
+在线预览:http://116.196.103.81/  or http://agblog.me</br>
 预览</br>
 PC版</br>
 ![img](https://github.com/Month7/newlvsukang/blob/master/%E9%A2%84%E8%A7%88/%E4%B8%BB%E9%A1%B51.png)</br>
